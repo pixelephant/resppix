@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resppix</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", controller_name %>
+  <%= javascript_include_tag "application", controller_name %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+  	/* Bocsi Zeldman */
+  	@media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  		#main-nav{
+  			margin-top:0 !important;
+  			opacity:1 !important;
+  		}
+  	}
+  </style>
+</head>
+<body class="container">
+
+<section id="contact">
+		<div id="contact-options">
+			<div id="contact-options-inner" class="clearfix">
+				<a class="active" href="#quote-form">
+					Árajánlatkérés
+					<span>"I have a project in mind"</span>
+				</a>
+				<a href="#contact-form">
+					Kapcsolat
+					<span>"I just want to say hi"</span>
+				</a>
+			</div>
+		</div>
+		<div id="form-wrap">
+			<form action="#" id="quote-form">
+				<div class="row">
+					<fieldset>
+						<label for="quote-name">Név <span class="ast">*</span></label>
+						<input type="text" name="quote-name" id="quote-name" />
+					</fieldset>
+					<fieldset>
+						<label for="quote-email">Email cím <span class="ast">*</span></label>
+						<input type="email" name="quote-email" id="quote-email" />
+					</fieldset>
+				</div>
+				<div class="row">
+					<fieldset>
+						<label for="quote-phone">Telefonszám</label>
+						<input type="tel" name="quote-phone" id="quote-phone" />
+					</fieldset>
+					<fieldset>
+						<label for="quote-budget">Büdzsé</label>
+						<select name="quote-budget" id="quote-budget">
+							<option value="250">250 000 Ft alatt</option>
+							<option value="250500">250 000 Ft - 500 000 Ft</option>
+							<option value="5001000">500 000 Ft - 1 000 000 Ft</option>
+							<option value="10002500">1000 000 Ft - 2 000 000 Ft</option>
+							<option value="2500">2 000 000 Ft fölött</option>
+							<option value="0">Nem tudom</option>
+						</select>
+					</fieldset>
+				</div>
+				<div class="row full">
+					<label for="quote-brief">Projekt leírás <span class="ast">*</span></label>
+					<textarea name="quote-brief" id="quote-brief" cols="30" rows="10"></textarea>
+				</div>
+				<div class="row full">
+					<input type="submit" value="Küldés">
+					<a class="close" href="#">x</a>
+				</div>
+			</form>
+			<form action="#" id="contact-form">
+				<div class="row">
+					<fieldset>
+						<label for="contact-name">Név <span class="ast">*</span></label>
+						<input type="text" name="contact-name" id="contact-name" />
+					</fieldset>
+					<fieldset>
+						<label for="contact-email">Email cím <span class="ast">*</span></label>
+						<input type="email" name="contact-email" id="contact-email" />
+					</fieldset>
+				</div>
+				<div class="row">
+					<fieldset>
+						<label for="contact-phone">Telefonszám</label>
+						<input type="tel" name="contact-phone" id="contact-phone" />
+					</fieldset>
+				</div>
+				<div class="row full">
+					<label for="contact-brief">Üzenet <span class="ast">*</span></label>
+					<textarea name="contact-brief" id="contact-brief" cols="30" rows="10"></textarea>
+				</div>
+				<div class="row full">
+					<input type="submit" value="Küldés">
+					<a class="close" href="#">x</a>
+				</div>
+			</form>
+	</div>
+</section>
+
+<header class="clearfix">
+		<div id="header-inner">
+			<figure id="logo">
+				<a href="/">
+					<img src="/assets/logo.png" alt="Pixelephant Media logó" />
+				</a>
+			</figure>
+			<% if params[:controller] == 'home'%>
+				<div id="welcome">
+					<h2> Rajongunk a</h2>
+					<h3><div class="rw-words rw-words-1">
+							<span class="w"><span aria-hidden="true">&bull;</span>pixelekért<span aria-hidden="true">&bull;</span></span>
+							<span class="w"><span aria-hidden="true">&bull;</span>webért<span aria-hidden="true">&bull;</span></span>
+							<span class="w"><span aria-hidden="true">&bull;</span>brandekért<span aria-hidden="true">&bull;</span></span>
+							<span class="w"><span aria-hidden="true">&bull;</span>marketingért<span aria-hidden="true">&bull;</span></span>
+							<span class="w"><span aria-hidden="true">&bull;</span>helyzetekért<span aria-hidden="true">&bull;</span></span>
+							<span class="w"><span aria-hidden="true">&bull;</span>kutyákért<span aria-hidden="true">&bull;</span></span>
+						</div></h3>
+					<p>A Pixelephant Media Kft. egy <em>teljes körű digitális ügynökség</em>, amely kis és középvállalatoknak segít pixelekkel megoldani üzleti problémáit.</p>
+					<a href="#">Ismerjen meg minket!</a>
+				</div>
+			<%end%>
+		</div>
+</header>
+
+<nav id="mobile-nav">
+	<ul>
+		<li id="email"><a href="mailto:pixelephant@pixelephant.hu"><span aria-hidden="true" data-icon="&#x0065;"></span>email</a></li>
+		<li id="address"><a href="http://goo.gl/maps/WH53"><span aria-hidden="true" data-icon="&#x0061;"></span>cím</a></li>
+		<li id="phone"><a href="tel:+36204944631"><span aria-hidden="true" data-icon="&#x0074;"></span>+36-20-4944-631</a></li>
+		<li id="mobile-menu"><a href="#"><span aria-hidden="true" data-icon="&#x006d;"></span>menü</a></li>
+	</ul>
+</nav>
+
+<nav id="main-nav">
+	<div id="main-nav-inner">
+		<ul>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Szolgáltatások <span aria-hidden="true">&#8226;</span></a> </li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Portfólió <span aria-hidden="true">&#8226;</span></a></li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Módszertan <span aria-hidden="true">&#8226;</span></a></li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Rólunk <span aria-hidden="true">&#8226;</span></a></li>
+			<li class="quote-button"><a href="#"><span aria-hidden="true">&#8226;</span> Kapcsolat <span aria-hidden="true">&#8226;</span></a> </li>
+		</ul>
+	</div>
+</nav>
+
+<div id="main">
+	
+<%= yield %>
+
+</div>
+
+
+<footer id="main-footer">
+	<div class="in">
+		<nav>
+		<ul>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Szolgáltatások <span aria-hidden="true">&#8226;</span></a> </li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Portfólió <span aria-hidden="true">&#8226;</span></a></li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Módszertan <span aria-hidden="true">&#8226;</span></a></li>
+			<li><a href="#"><span aria-hidden="true">&#8226;</span> Rólunk <span aria-hidden="true">&#8226;</span></a></li>
+			<li class="quote-button"><a href="#"><span aria-hidden="true">&#8226;</span> Kapcsolat <span aria-hidden="true">&#8226;</span></a> </li>
+		</ul>
+	</nav>
+	<p><a href="tel:+36204944631">+36-20-4944-631</a> | <a href="mailto:pixelephant@pixelephant.hu">pixelephant@pixelephant.hu</a> | <a href="http://goo.gl/maps/WH53">1107 Budapest, Árpa u. 8</a></p>
+	<p>&copy; Pixelephant Media Kft. - Minden jog fenntartva.</p>
+	</div>
+</footer>
+</body>
+</html>

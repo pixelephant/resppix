@@ -1,0 +1,581 @@
+@import 'normalize.css';
+@import '_mixins.css.scss';
+
+@font-face {
+font-family: 'IcoMoon';
+  src: url('<%= asset_path('IcoMoon.eot')%>');
+  src: url('<%= asset_path('font/IcoMoon.eot?#iefix')%>') format('embedded-opentype'),
+       url('<%= asset_path('IcoMoon.woff')%>') format('woff'),
+       url('<%= asset_path('IcoMoon.ttf')%>') format('truetype'),
+       url('<%= asset_path('IcoMoon.svg#IcoMoon')%>') format('svg');
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'gbi';
+    src: url('<%= asset_path('genbasbi-webfont.eot')%>');
+    src: url('<%= asset_path('genbasbi-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('genbasbi-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('genbasbi-webfont.ttf')%>') format('truetype');
+    font-weight: normal !important;
+  font-style: normal !important;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gi';
+    src: url('<%= asset_path('genbasi-webfont.eot')%>');
+    src: url('<%= asset_path('genbasi-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('genbasi-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('genbasi-webfont.ttf')%>') format('truetype');
+    font-weight: normal !important;
+  font-style: normal !important;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'osb';
+    src: url('<%= asset_path('opensans-bold-webfont.eot')%>');
+    src: url('<%= asset_path('opensans-bold-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('opensans-bold-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('opensans-bold-webfont.ttf')%>') format('truetype');
+    font-weight: normal !important;
+  font-style: normal !important;
+
+}
+
+
+@font-face {
+    font-family: 'osx';
+    src: url('<%= asset_path('opensans-extrabold-webfont.eot')%>');
+    src: url('<%= asset_path('opensans-extrabold-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('opensans-extrabold-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('opensans-extrabold-webfont.ttf')%>') format('truetype');
+   font-weight: normal !important;
+  font-style: normal !important;
+}
+
+
+@font-face {
+    font-family: 'osi';
+    src: url('<%= asset_path('opensans-italic-webfont.eot')%>');
+    src: url('<%= asset_path('opensans-italic-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('opensans-italic-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('opensans-italic-webfont.ttf')%>') format('truetype');
+   font-weight: normal !important;
+  font-style: normal !important;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'os';
+    src: url('<%= asset_path('opensans-regular-webfont.eot')%>');
+    src: url('<%= asset_path('opensans-regular-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('opensans-regular-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('opensans-regular-webfont.ttf')%>') format('truetype');
+    font-weight: normal !important;
+  font-style: normal !important;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nb';
+    src: url('<%= asset_path('synthview_-_novecentowide-bold-webfont.eot')%>');
+    src: url('<%= asset_path('synthview_-_novecentowide-bold-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('synthview_-_novecentowide-bold-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('synthview_-_novecentowide-bold-webfont.ttf')%>') format('truetype');
+    font-weight: normal !important;
+  font-style: normal !important;
+}
+
+
+
+@font-face {
+    font-family: 'n';
+    src: url('<%= asset_path('synthview_-_novecentowide-book-webfont.eot')%>');
+    src: url('<%= asset_path('synthview_-_novecentowide-book-webfont.eot?#iefix')%>') format('embedded-opentype'),
+         url('<%= asset_path('synthview_-_novecentowide-book-webfont.woff')%>') format('woff'),
+         url('<%= asset_path('synthview_-_novecentowide-book-webfont.ttf')%>') format('truetype');
+   font-weight: normal !important;
+  font-style: normal !important;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+	speak: none;
+	text-transform:lowercase;
+}
+
+
+
+img{
+	max-width:100%;
+}
+
+html{
+	font-family:os;
+}
+
+#header-inner,#main-nav-inner,#contact-inner,#contact-options-inner,#form-wrap,.mid,#main-footer .in{
+	max-width:1400px;
+	margin:0 auto;
+}
+
+header{
+	position: relative;
+	z-index:2;
+	width:93.75%;
+	background: #fff;
+	padding:10px 3.125%;
+	#logo{
+		text-align:center;
+		a{
+			display:block;
+		}
+	}
+}
+
+#header-inner{
+	overflow:hidden;
+	width:100%;
+}
+
+#mobile-nav{
+	border-top:1px solid $border-gray;
+	border-bottom:1px solid $border-gray;
+	position: relative;
+	z-index:2;
+	width:100%;
+	background:white;
+	ul{
+		overflow: hidden;
+	}
+	li{
+		text-align:center;
+		float:left;
+		font-size:0.75em;
+		color:$lightgray;
+		text-transform:uppercase;
+		height:50px;
+		span{
+			display:block;
+		}
+	}
+	a,b{
+		font-weight:normal;
+		display:block;
+		height:30px;
+		text-decoration:none;
+		color:$lightgray;
+		padding:10px 0;
+		font-weight:normal;
+		span{
+			display:block;
+			font-weight:normal;
+		}
+	}
+}
+
+#email{
+	width:25%;
+}
+
+#address{
+	width:18.75%;
+}
+
+#phone{
+	width:32.8125%;
+}
+
+#mobile-menu{
+	width:23.4375%;
+	&.active,&:active,&:hover,&:focus{
+		a{
+			color:white;
+			background:$purple;
+		}
+	}
+}
+
+#main-nav{
+	z-index:1;
+	margin-top:-200px;
+	position: relative;
+	padding:10px 0;
+	width:100%;
+	background:$purple;
+	ul{
+		color:white;
+		li{
+			list-stlye:none;
+			width:100%;
+			@include font-nb;
+			letter-spacing:1px;
+			color:$darkgray;
+			font-size:0.75em;
+			@include t-04;
+			&.active,&:hover,&:focus,&:active{
+				background:#5E4177;
+				span{
+					display:inline;
+				}
+			}
+		}
+		span{
+			display:none;
+		}
+		a{
+			color:white;
+			text-decoration:none;
+			display:block;
+			padding:10px;
+		}
+	}
+}
+
+
+#contact{
+	width:100%;
+	position:relative;
+	z-index:2;
+	background:$purple;
+	margin-top:-485px;
+}
+
+#contact-options{
+	background:#fff;
+	width:100%;
+}
+
+#contact-options-inner{
+		height:50px;
+		padding-top:10px;
+		a{
+			height:50px;
+			color:$darkgray;
+			width:50%;
+			float:left;
+			text-align:center;
+			@include font-nb;
+			font-size:1em;
+			text-decoration:none;
+			@include t-04;
+			span{
+				font-family:'gi';
+				font-size:1em;
+				display:block;
+				text-transform:none;
+				letter-spacing:0px;
+				
+			}
+			&.active,&:active,&:hover,&:focus{
+				position: relative;
+				background: #fff;
+				&:after{
+					top: 100%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-top-color: #fff;
+					border-width: 8px;
+					left: 50%;
+					margin-left: -8px;
+				}
+				color:$blue;
+				span{
+					color:$darkgray;
+				}
+			}
+		}
+	}
+
+#form-wrap{
+	width:100%;
+	height:430px;
+
+	overflow:hidden;
+	input[type="text"],input[type="tel"],input[type="email"]{
+		border:none;
+		padding:0;
+		margin:0;
+
+		height:24px;
+		background:#fff;
+		@include border-radius(3px);
+		width:96%;
+		font-family:Helvetica;
+		font-size:1em;
+		color:$darkgray;
+		padding:3px 2%;
+	}
+	textarea{
+		border:none;
+		padding:0;
+		margin:0;
+		background:#fff;
+		@include border-radius(3px);
+		width:98%;
+		font-family:Helvetica;
+		font-size:1em;
+		color:$darkgray;
+		padding:3px 1%;
+	}
+	label{
+		color:#fff;
+		text-transform:uppercase;
+		font-size:14px;
+		width:100%;
+		display:block;
+		margin-bottom:10px;
+		.ast{
+			color:red;
+			font-size:16px;
+		}
+	}
+	select{
+		width:100%;
+		height:30px;
+		margin-top:5px;
+	}
+	.row{
+		margin:10px 0;
+		overflow:hidden;
+		&.full{
+			width:96%;
+			padding:0 2%;
+		}
+		fieldset{
+			width:46%;
+			padding:0 2%;
+			float:left;
+			&:first-child{
+				
+			}
+		}
+	}
+	input[type="submit"]{
+		@include blue-pill;
+	}
+
+	.close{
+		background:white;
+		float:right;
+		@include border-radius(30px);
+		width:30px;
+		height:30px;
+		text-align:center;
+		line-height:30px;
+		text-decoration:none;
+		color:$darkgray;
+		&:hover,&:focus{
+			color:red;
+		}
+	}
+}
+
+
+#main{
+	hgroup{
+		padding:20px 0;
+		margin:0;
+		border-bottom: 1px solid $border-gray;
+		text-align:center;
+		@include gray-arrow;
+		h2,h1{
+			@include font-nb;
+			font-size:1.25em;
+			color:$purple;
+			text-shadow:2px 2px 0px #dfdfdf;
+			text-transform:uppercase;
+			margin:0;
+			&:before{
+				content: "• ";
+				speak: none;
+			}
+			&:after{
+				content: " •";
+				speak: none;
+			}
+		}
+		h3{
+			margin:0;
+			font-size: 0.875em;
+			font-family: gi;
+			color:$blue;
+		}		
+	}
+}
+
+footer{
+	width:100%;
+	background:#000;
+	ul{
+		border-bottom:1px solid $border-gray;
+		color:#fff;
+		li{
+			list-stlye:none;
+			width:100%;
+			@include font-nb;
+			letter-spacing:1px;
+			font-size:0.75em;
+			@include t-04;
+			&.active,&:hover,&:focus,&:active{
+				background:$lightgray;
+				span{
+					display:inline;
+				}
+			}
+		}
+		span{
+			display:none;
+		}
+		a{
+			color:#fff;
+			text-decoration:none;
+			display:block;
+			padding:10px;
+		}
+	}
+	p{
+		&:last-child{
+			margin-bottom:0;
+			padding-bottom:10px;
+		}
+		text-align:center;
+		font-family:osi;
+		width:100%;
+		color:#8F8A8A;
+		font-size:0.875em;
+		a{
+			color:#fff;
+			text-decoration:none;
+		}
+	}
+}
+
+ /* Landscape phones and down */
+  @media (max-width: 480px) {
+
+  }
+ 
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 767px) {
+
+  }
+ 
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) and (max-width: 979px) {
+  		
+  }
+
+   /* NOT mobile */
+  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  	.mid{
+  		width:80%;
+  	}
+
+  	#main{
+		hgroup{
+			h1,h2{
+				font-size:2.5em;
+			}
+			h3{
+				font-size:1em;
+			}
+		}
+		p{
+			font-size:1em !important;
+		}
+		h4{
+			font-size:1.1em !important;
+		}
+	}
+
+
+
+  	footer{
+  		ul{
+  			border:none;
+  			margin-bottom:100px;
+  			overflow:hidden;
+  			li{
+  				float:left;
+  				width:20%;
+  				text-align:center;
+  				font-size:0.75em;
+  				&.active,&:hover,&:focus,&:active{
+					background:none;
+				}
+  			}
+  		}
+  	}
+
+  	#mobile-nav{
+  		display:none;
+  	}
+  	header{
+  		padding: 40px 3.125%;
+  	}
+  	#logo{
+  		margin-top:10px;
+  	}
+
+  	#main-nav{
+  		overflow:hidden;
+  		width:100%;
+  		background:$purple;
+  		z-index:2;
+  		ul{
+  			width:100%;
+  			overflow: hidden;
+  			a{
+  				color:#fff;
+  				display:block;
+  				padding:10px 0;
+  			}
+  			li{
+  				text-align:center;
+  				float:left;
+  				width:20%;
+  				span{
+  					@include t-04;
+  				}
+  				&:hover,&:focus{
+  					background:none;
+  				}
+  				&:active,&.active{
+  					background:none;	
+  				}
+  			}
+  		}
+  	}
+  }
+
+ 
+  /* Large desktop */
+  @media (min-width: 1400px) {
+  	#main-nav{
+  		li{
+  			width:20% !important;
+  		}
+  	}
+  }
