@@ -9,6 +9,45 @@
 }
 
 
+#portfolio-nav{
+  width:60%;
+  margin:20px auto 0 auto;
+  overflow:hidden;
+  height:32px;
+  position:relative;
+  .control{
+    width:32px;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position:absolute;
+    &.left{
+      background:url(left.png) no-repeat;
+      left:0;     
+    }
+    &.grid{
+      background:url(grid.png) no-repeat;
+      left:50%;
+      margin-left:-16px;
+    }
+    &.right{
+      background:url(right.png) no-repeat;
+      right:0;
+    }
+  }
+}
+
+#text{
+  div{
+    width:97%;
+    padding-left:3%;
+  }
+  li{
+    list-style: none;
+  }
+}
+
 /* Landscape phones and down */
   @media (max-width: 480px) {
   	#portfolio-grid{
@@ -18,7 +57,25 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
-  	.p-el{
+  	#text{
+      overflow:hidden;
+      div{
+        padding-left:0;
+        width:45%;
+        float:left;
+        &:first-child{
+          width:100%;
+          float:none;
+        }
+        &:nth-child(2){
+          margin-right:5%;
+           width:45%;
+        float:left;
+        }
+      }
+    }
+
+    .p-el{
   			margin-bottom:4%;
   			width:48%;
   			float:left;
