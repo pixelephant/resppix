@@ -23,28 +23,47 @@
     overflow: hidden;
     position:absolute;
     &.left{
-      background:url(left.png) no-repeat;
+      background:url(left.png) no-repeat center;
       left:0;     
     }
     &.grid{
-      background:url(grid.png) no-repeat;
+      background:url(grid.png) no-repeat center;
       left:50%;
       margin-left:-16px;
     }
     &.right{
-      background:url(right.png) no-repeat;
+      background:url(right.png) no-repeat center;
       right:0;
     }
   }
 }
 
 #text{
+  line-height:1.5;
   div{
     width:97%;
     padding-left:3%;
   }
   li{
     list-style: none;
+  }
+}
+
+.portfolio-el{
+  h3{
+    font-family:gi;
+    font-weight:normal;
+    font-size:20px;
+    text-align:center;
+    margin:20px 0;
+  }
+  figure{
+    text-align:center;
+    background: $white;
+    border: 1px solid $border-gray;
+    img{
+      max-width:100%;
+    }
   }
 }
 
@@ -100,3 +119,21 @@
   		}
   }
 
+@media (min-width: 1400px) {
+  #text{
+      overflow:hidden;
+      div{
+        padding-left:0;
+        width:30% !important;
+        float:left;
+        margin-right:5% !important;
+         &:first-child{
+          float:left;
+         }
+        &:nth-child(2){
+          margin-right:0% !important;
+        }
+      }
+    }
+
+}

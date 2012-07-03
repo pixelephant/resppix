@@ -2,6 +2,7 @@ $purple:#6b468d;
 $darkgray:#6d6e71;
 $lightgray:#929497;
 $black:#535352;
+$white: #f5f5f5;
 
 $border-gray:#e4e3e3;
 $bg-gray:#F1F1F2;
@@ -12,9 +13,6 @@ $red: #d41950;
 $green: #2c955c;
 $orange: #ff7f00;
 $yellow: #ffda00;
-
-
-
 
 
 
@@ -169,4 +167,17 @@ $yellow: #ffda00;
     		overflow:hidden;
 		}
 	}
+}
+
+@mixin link{
+	color:$blue;
+	text-decoration:underline;
+	@include t-04;
+	&:hover,&:focus{
+		color:$green;
+	}
+}
+
+.link{
+	@include link;
 }
