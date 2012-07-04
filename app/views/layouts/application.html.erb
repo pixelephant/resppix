@@ -4,7 +4,6 @@
   <title>Resppix</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "application", controller_name %>
-  <%= javascript_include_tag "application", controller_name %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
@@ -167,5 +166,7 @@
 	<p>&copy; Pixelephant Media Kft. - Minden jog fenntartva.</p>
 	</div>
 </footer>
+<%= javascript_include_tag "application", controller_name %>
+<%= javascript_include_tag "retina", controller_name %>
 </body>
 </html>

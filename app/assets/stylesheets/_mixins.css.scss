@@ -15,6 +15,20 @@ $orange: #ff7f00;
 $yellow: #ffda00;
 
 
+// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
+
+@mixin at2x($image_name, $w: auto, $h: auto, $extention: '.png') {
+  background-image: image_url($image_name + $extention);
+  $x2img : $image_name + '@2x' + $extention;
+  background-position: center;
+  background-repeat:no-repeat;
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: image_url($x2img);
+    background-size: $w $h;
+  }  
+}
+
+
 
 @mixin border-radius($expr: 3px 3px 3px 3px){
 	-webkit-border-radius: $expr;
@@ -174,7 +188,7 @@ $yellow: #ffda00;
 	text-decoration:underline;
 	@include t-04;
 	&:hover,&:focus{
-		color:$green;
+		color:$purple;
 	}
 }
 
