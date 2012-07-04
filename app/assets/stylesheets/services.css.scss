@@ -1,2 +1,88 @@
 @import '_mixins.css.scss';
 
+#contact-cta{
+	margin:0;
+}
+
+.service{
+	.mid{
+		padding:40px 20px;
+	}
+	ul{
+		overflow:hidden;
+		li{
+			float:left;
+			width:33.33333%;
+			list-style-position:inside;
+			font-size:0.9em;
+			line-height:2;
+		}
+	}
+	&:nth-child(odd){
+		border:1px solid $border-gray;
+		background: $bg-gray;
+	}
+	h4{
+		height:50px;
+		line-height:50px;
+		@include font-nb;
+		background-position:center left !important;
+		padding-left:60px
+	}
+	h5{
+		font-family: gi;
+		font-weight:normal;
+		font-size:1.2em;
+	}
+	blockquote{
+		font-size:1.2em;
+		width:50%;
+		margin:0 auto;
+		overflow:hidden;
+		font-family:gi;
+			color:$lightgray;
+		p{
+			display:block;
+			margin-bottom:0;
+		}
+		span{
+			float:right;
+
+		}
+	}
+}
+
+#weboldal h4{
+	@include at2x(icon_webo,50px,50px);
+}
+
+#webalk h4{
+	@include at2x(icon_weba,50px,50px);
+}
+
+#webmark h4{
+	@include at2x(icon_webm,50px,50px);
+}
+
+#arculat h4{
+	@include at2x(icon_arculat,50px,50px);
+}
+
+@media (max-width: 480px) {
+  	.service li{
+  		float:none !important;
+  		width:100% !important;
+  	}
+  }
+
+  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  	.service li{
+  		width:25% !important;
+  	}
+  }
+
+  @media (min-width: 1400px) {
+  	.service li{
+  		width:20% !important;
+  	}	
+  }
