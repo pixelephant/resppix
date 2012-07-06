@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 		$('#testing_enter').click(function() {
 		  $('#testing_rocket').animate({
-		    top: "-60%"
+		    top: "-80%"
 		  }, 1500,"easeInOutExpo", function() {
 		    $("#testing_rocket").fadeOut("fast",function(){
 		    	$("#testing_rocket").css("top","30%");
