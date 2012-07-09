@@ -244,6 +244,10 @@ header{
 					display:inline;
 				}
 			}
+			&:active{
+				top:1px;
+				position:relative;
+			}
 		}
 		span{
 			display:none;
@@ -355,7 +359,7 @@ header{
 		display:block;
 		margin-bottom:10px;
 		.ast{
-			color:red;
+			color:$orange;
 			font-size:16px;
 		}
 	}
@@ -400,6 +404,28 @@ header{
 	}
 }
 
+
+#thank-you{
+	margin-top:-100px;
+	height:80px;
+	position:relative;
+	z-index:1;
+	width:100%;
+	text-align:center;
+	background:url(heart.png) center center no-repeat $green;
+	padding:10px 0;
+	color:#fff;
+	h3{
+		margin-bottom:0;
+		@include font-nb;
+		font-size:1em;
+	}
+	p{
+		margin-top:0;
+		font-family:'gi';
+		font-size:1.1em;
+	}
+}
 
 #main{
 	hgroup{
@@ -497,6 +523,18 @@ footer{
 		a{
 			color:#fff;
 			text-decoration:none;
+		}
+	}
+}
+
+#social{
+	text-align:center;
+	iframe{
+		display:inline;
+		position:relative;
+		top:1px;
+		&:first-child{
+			top:0;
 		}
 	}
 }

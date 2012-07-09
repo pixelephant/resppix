@@ -18,6 +18,11 @@
 </head>
 <body class="container">
 
+<section id="thank-you">
+	<h3>Köszönjük!</h3>
+	<p>Hamarosan jelentkezünk!</p>
+</section>
+
 <section id="contact">
 		<div id="contact-options">
 			<div id="contact-options-inner" class="clearfix">
@@ -36,11 +41,11 @@
 				<div class="row">
 					<fieldset>
 						<label for="quote-name">Név <span class="ast">*</span></label>
-						<input type="text" name="quote-name" id="quote-name" />
+						<input type="text" name="quote-name" id="quote-name" required />
 					</fieldset>
 					<fieldset>
 						<label for="quote-email">Email cím <span class="ast">*</span></label>
-						<input type="email" name="quote-email" id="quote-email" />
+						<input type="email" name="quote-email" id="quote-email" required />
 					</fieldset>
 				</div>
 				<div class="row">
@@ -62,22 +67,22 @@
 				</div>
 				<div class="row full">
 					<label for="quote-brief">Projekt leírás <span class="ast">*</span></label>
-					<textarea name="quote-brief" id="quote-brief" cols="30" rows="10"></textarea>
+					<textarea name="quote-brief" id="quote-brief" cols="30" rows="10" required></textarea>
 				</div>
 				<div class="row full">
 					<input type="submit" value="Küldés">
-					<a class="close" href="#">x</a>
+					<a class="close" href="#">&times;</a>
 				</div>
 			</form>
 			<form action="#" id="contact-form">
 				<div class="row">
 					<fieldset>
 						<label for="contact-name">Név <span class="ast">*</span></label>
-						<input type="text" name="contact-name" id="contact-name" />
+						<input type="text" name="contact-name" id="contact-name" required />
 					</fieldset>
 					<fieldset>
 						<label for="contact-email">Email cím <span class="ast">*</span></label>
-						<input type="email" name="contact-email" id="contact-email" />
+						<input type="email" name="contact-email" id="contact-email" required />
 					</fieldset>
 				</div>
 				<div class="row">
@@ -88,11 +93,11 @@
 				</div>
 				<div class="row full">
 					<label for="contact-brief">Üzenet <span class="ast">*</span></label>
-					<textarea name="contact-brief" id="contact-brief" cols="30" rows="10"></textarea>
+					<textarea name="contact-brief" id="contact-brief" cols="30" rows="10" required></textarea>
 				</div>
 				<div class="row full">
 					<input type="submit" value="Küldés">
-					<a class="close" href="#">x</a>
+					<a class="close" href="#">&times;</a>
 				</div>
 			</form>
 	</div>
@@ -162,6 +167,11 @@
 			<li class="quote-button"><a href="#"><span aria-hidden="true">&#8226;</span> Kapcsolat <span aria-hidden="true">&#8226;</span></a> </li>
 		</ul>
 	</nav>
+	<p id="social">
+		<a href="https://twitter.com/pixelephant" class="twitter-follow-button" data-show-count="false" data-lang="hu">@pixelephant követése</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpixelephant&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=136997593064327" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+	</p>
 	<p><a href="tel:+36204944631">+36-20-4944-631</a> | <a href="mailto:pixelephant@pixelephant.hu">pixelephant@pixelephant.hu</a> | <a href="http://goo.gl/maps/WH53">1107 Budapest, Árpa u. 8</a></p>
 	<p>&copy; Pixelephant Media Kft. - Minden jog fenntartva.</p>
 	</div>

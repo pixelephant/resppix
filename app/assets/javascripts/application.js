@@ -4,6 +4,18 @@
 
 $(document).ready(function(){
 
+
+	$("#contact-form,#quote-form").submit(function(){
+
+		$(".close").eq(0).trigger("click");
+		$("#thank-you").animate({
+			marginTop: 0,
+			zIndex: 3
+		},500, "easeInOutQuad");
+
+		return false;
+	});
+
 	$("#mobile-menu").toggle(function(){
 		$("#main-nav").stop().animate({
 			marginTop: 0
