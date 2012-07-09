@@ -52,7 +52,22 @@ $yellow: #ffda00;
 
 }
 
+@mixin font-nb{
+	font-family: 'nb';
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+@mixin font-n{
+	font-family: 'n';
+	text-transform: uppercase;	
+	font-weight: normal;
+}
+
 @mixin blue-pill{
+	@include font-nb;
+	font-size:0.75em;
 	@include t-04;
 	text-decoration:none;
 	color: #ffffff;
@@ -92,18 +107,7 @@ $yellow: #ffda00;
 	cursor:pointer;
 }
 
-@mixin font-nb{
-	font-family: 'nb';
-	text-transform:uppercase;
-	letter-spacing: 2px;
-	font-weight: normal;
-}
 
-@mixin font-n{
-	font-family: 'n';
-	text-transform: uppercase;	
-	font-weight: normal;
-}
 
 @mixin gray-arrow{
 
