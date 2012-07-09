@@ -233,7 +233,8 @@
 	}
 }
 
-#welcome{
+.no-touch{
+	#welcome{
 	a{
 		display:none;
 	}
@@ -244,14 +245,19 @@
 
 
 .rw-words{
+	width:100%;
+	height:100%;
+	position:relative;
 	display: inline;
-	text-indent: 10px;
 	.w{
 		display:inline !important;
+		width:100%;
+		text-align:center;
 	}
 }
 .rw-words-1 .w{
 	position: absolute;
+	left:0;
 	opacity: 0;
 	overflow: hidden;
 	-webkit-animation: rotateWord 18s linear infinite 0s;
@@ -301,6 +307,9 @@
 	animation-delay: 15s; 
 	color:$green;
 }
+}
+
+
 
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }

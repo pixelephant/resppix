@@ -2,6 +2,8 @@
 //= require jquery_ujs
 //= require jquery.easing
 
+
+
 $(document).ready(function(){
 
 	$("#mobile-menu").toggle(function(){
@@ -47,8 +49,8 @@ $(document).ready(function(){
 
 	$("#contact-options a").click(function(){
 		var $this = $(this);
-		
-		$this.siblings().removeClass("active").end().addClass("active");
+		if(!$this.hasClass("active")){
+			$this.siblings().removeClass("active").end().addClass("active");
 		/*var $c = $($this.siblings().attr("href"));
 		var $t = $($this.attr("href"));
 		$c.slideUp(300,function(){
@@ -57,8 +59,9 @@ $(document).ready(function(){
 		$('#form-wrap').animate({
          scrollTop: $($this.attr("href")).offset().top
      }, 500, "easeInOutQuad");
+		
+		}
 		return false;
-
 	});
 
 });

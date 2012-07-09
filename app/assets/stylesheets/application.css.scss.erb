@@ -238,7 +238,7 @@ header{
 			color:$darkgray;
 			font-size:0.75em;
 			@include t-04;
-			&.active,&:hover,&:focus,&:active{
+			&.active,&:focus,&:active{
 				background:#5E4177;
 				span{
 					display:inline;
@@ -257,6 +257,13 @@ header{
 	}
 }
 
+
+.no-touch #main-nav li:hover{
+	background:#5E4177;
+	span{
+		display:inline;
+	}
+}
 
 #contact{
 	width:100%;
@@ -355,7 +362,7 @@ header{
 		display:block;
 		margin-bottom:10px;
 		.ast{
-			color:red;
+			color:$orange;
 			font-size:16px;
 		}
 	}
@@ -398,8 +405,25 @@ header{
 			color:red;
 		}
 	}
+	form{
+		height:420px;
+	}
 }
 
+.touch{
+	select{
+		position:relative;
+		top:-5px;
+	}
+	#form-wrap{
+		height:450px;
+	}
+	form{
+		&:nth-child(2){
+			margin-top:20px;
+		}
+	}
+}
 
 #main{
 	hgroup{
@@ -588,9 +612,6 @@ footer{
   				span{
   					@include t-04;
   				}
-  				&:hover,&:focus{
-  					background:none;
-  				}
   				&:active,&.active{
   					background:none;	
   				}
@@ -599,6 +620,11 @@ footer{
   	}
   }
 
+.no-touch #main-nav ul li{
+	&:hover,&:focus{
+  		background:none;
+  	}
+}
  
   /* Large desktop */
   @media (min-width: 1400px) {
