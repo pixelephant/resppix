@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found :(</title>
+  <title>Az oldal nem található. :(</title>
   <style>
     ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
     ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -24,16 +24,22 @@
     #goog-wm-sb:hover, #goog-wm-sb:focus { border-color: #aaa; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); background-color: #f8f8f8; }
     #goog-wm-qt:focus, #goog-wm-sb:focus { border-color: #105cb6; outline: 0; color: #222; }
     input::-moz-focus-inner { padding: 0; border: 0; }
+    img{
+      width:85px;
+      margin:20px auto;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Not found <span>:(</span></h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-    <p>It looks like this was the result of either:</p>
+    <h1>Az oldal nem található <span>:(</span></h1>
+    <img src="/assets/404.png" alt="404">
+    <p>A keresett oldal nem található.</p>
+    <p>A következők miatt történhetett:</p>
     <ul>
-      <li>a mistyped address</li>
-      <li>an out-of-date link</li>
+      <li>egy elírt cím</li>
+      <li>egy régi/használaton kívüli link</li>
     </ul>
     <script>
       var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;

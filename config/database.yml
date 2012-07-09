@@ -15,7 +15,7 @@ development:
   database: resppix_development
   pool: 5
   username: root
-  password: 
+  password: tyeF2q
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
