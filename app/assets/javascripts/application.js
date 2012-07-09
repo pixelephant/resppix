@@ -6,8 +6,6 @@
 
 $(document).ready(function(){
 
-	alert($("#quote-form").height());
-
 	$("#contact-form,#quote-form").submit(function(){
 
 		$(".close").eq(0).trigger("click");

@@ -1,5 +1,24 @@
 @import '_mixins.css.scss';
 
+.p-el{
+  height:460px;
+}
+
+.study{
+  h4{
+    .plus{
+      color:$orange;
+    }
+    em{
+      font-family: gi;
+      color:$blue;
+      font-size: 0.95em;
+      text-transform:none;
+    }
+  }
+
+}
+
 #portfolio-grid{
 	width:100%;
 	overflow:hidden;
