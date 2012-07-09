@@ -6,6 +6,7 @@
 
 $(document).ready(function(){
 
+	alert($("#quote-form").height());
 
 	$("#contact-form,#quote-form").submit(function(){
 
@@ -54,7 +55,7 @@ $(document).ready(function(){
 
 	$(".close").click(function(){
 		$("#contact").animate({
-			marginTop: -485
+			marginTop: -495
 		},500, "easeInOutQuad");
 		return false;
 	});
