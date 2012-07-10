@@ -15,6 +15,8 @@ $orange: #ff7f00;
 $yellow: #ffda00;
 
 
+@mixin vh{ border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
 // A helper mixin for applying high-resolution background images (http://www.retinajs.com)
 
 @mixin at2x($image_name, $w: auto, $h: auto, $extention: '.png') {

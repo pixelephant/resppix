@@ -6,6 +6,10 @@
 
 $(document).ready(function(){
 
+	$(document).keyup(function(e) {
+  		if (e.keyCode == 27) { $(".close").trigger("click"); }
+	});
+
 	$("#contact-form,#quote-form").submit(function(){
 
 		$(".close").eq(0).trigger("click");
@@ -31,7 +35,7 @@ $(document).ready(function(){
 	},function(){
 		$("#mobile-menu").removeClass("active");
 		$("#main-nav").stop().animate({
-			marginTop:-200
+			marginTop:-240
 		},300,function(){
 			$(this).animate({
 				opacity: 0	
@@ -53,7 +57,7 @@ $(document).ready(function(){
 
 	$(".close").click(function(){
 		$("#contact").animate({
-			marginTop: -495
+			marginTop: -535
 		},500, "easeInOutQuad");
 		return false;
 	});

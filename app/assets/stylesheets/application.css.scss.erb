@@ -139,6 +139,9 @@ h1,h2,h3,h4{
 //}
 
 
+
+
+
 #header-inner,#main-nav-inner,#contact-inner,#contact-options-inner,#form-wrap,.mid,#main-footer .in{
 	max-width:1400px;
 	margin:0 auto;
@@ -223,7 +226,7 @@ header{
 
 #main-nav{
 	z-index:1;
-	margin-top:-200px;
+	margin-top:-240px;
 	position: relative;
 	padding:10px 0;
 	width:100%;
@@ -274,12 +277,27 @@ header{
 	position:relative;
 	z-index:2;
 	background:$purple;
-	margin-top:-495px;
+	margin-top:-535px;
 }
 
 #contact-options{
 	background:#fff;
 	width:100%;
+	p{
+		text-align:center;
+		border-bottom:1px solid $border-gray;
+		margin:0;
+		height:40px;
+		line-height:40px;
+		color:$lightgray;
+		@include font-nb;
+		font-size:0.75em;
+		a{
+			text-decoration:none;
+			color:$lightgray;
+			
+		}
+	}
 }
 
 #contact-options-inner{
@@ -407,7 +425,7 @@ header{
 		text-decoration:none;
 		color:$darkgray;
 		&:hover,&:focus{
-			color:red;
+			color:$orange;
 		}
 	}
 	form{
@@ -560,21 +578,35 @@ footer{
 
  /* Landscape phones and down */
   @media (max-width: 480px) {
-
+  	
   }
  
   /* Landscape phone to portrait tablet */
   @media (max-width: 767px) {
-
+  	#contact-options p a{
+  		@include vh;
+  	}
   }
  
   /* Portrait tablet to landscape and desktop */
   @media (min-width: 768px) and (max-width: 979px) {
-  		
+  		#main-nav ul li,footer ul li{
+  			width:33.3333333% !important;
+  		}
+  }
+
+  @media (min-width: 980px){
+  		#main-nav ul li,footer ul li{
+  			width:16.66666667% !important;
+  		}
   }
 
    /* NOT mobile */
   @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+
+  	#contact{
+  		margin-top:-535px;
+  	}
   	.mid{
   		width:80%;
   	}
@@ -605,7 +637,6 @@ footer{
   			overflow:hidden;
   			li{
   				float:left;
-  				width:20%;
   				text-align:center;
   				font-size:0.75em;
   				&.active,&:hover,&:focus,&:active{
@@ -641,7 +672,6 @@ footer{
   			li{
   				text-align:center;
   				float:left;
-  				width:20%;
   				span{
   					@include t-04;
   				}
@@ -662,8 +692,6 @@ footer{
   /* Large desktop */
   @media (min-width: 1400px) {
   	#main-nav{
-  		li{
-  			width:20% !important;
-  		}
+  		
   	}
   }
