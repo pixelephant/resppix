@@ -5,16 +5,21 @@
 }
 
 .service{
+	.lead{
+		font-size:1.1em !important;
+	}
+	p{
+		line-height:1.5;
+	}
 	.mid{
 		padding:40px 20px;
 	}
 	ul{
 		overflow:hidden;
 		li{
-			float:left;
-			width:33.33333%;
 			list-style-position:inside;
 			font-size:0.9em;
+			width:100%;
 			line-height:2;
 		}
 	}
@@ -68,21 +73,57 @@
 	@include at2x(icon_arculat,50px,50px);
 }
 
+#dieter{
+	margin-bottom:20px;
+	display:none;
+	h5{
+		margin-top:0;
+		margin-bottom:20px;
+	}
+	ul{
+		width:80%;
+		float:left;
+	}
+	img{
+		width:20%;
+		float:left;
+		max-width:150px;
+	}
+
+}
+
+.extrawrap .mid{
+	padding-top:0;
+}
+
 @media (max-width: 480px) {
   	.service li{
   		float:none !important;
-  		width:100% !important;
+  		width:100%;
+  	}
+  	#dieter{
+  		ul{
+  			width:70%;
+  		}
+  		img{
+  			width:30%;
+  		}
   	}
   }
 
   @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  	.lead{
+  		font-size:1.2em !important;
+  	}
   	.service li{
-  		width:25% !important;
+  		width:50% !important;
+  		float:left;
   	}
   }
 
   @media (min-width: 1400px) {
   	.service li{
-  		width:20% !important;
+  		width:33.3333333% !important;
   	}	
+	
   }
