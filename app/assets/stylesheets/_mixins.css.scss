@@ -160,7 +160,7 @@ $yellow: #ffda00;
 		width:100%;
 		background: $bg-gray;
 		text-align:center;
-		@include t(0.8s);
+		//@include t(0.8s);
 	}
 	.title{
 		padding:0 20px;
