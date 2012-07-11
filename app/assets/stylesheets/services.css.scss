@@ -124,6 +124,17 @@
   @media (min-width: 1400px) {
   	.service li{
   		width:33.3333333% !important;
+  	}
+
+  	.extra{
+  		float:left;
+  		width:45%;
+  		&:nth-child(even){
+  			margin-right:10%;
+  		}
+  		& + h5{
+  			clear: both;
+  		}
   	}	
 	
   }
