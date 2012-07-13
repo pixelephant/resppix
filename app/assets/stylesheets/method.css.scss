@@ -1,0 +1,200 @@
+@import '_mixins.css.scss';
+
+/*.mid{
+		padding:40px 20px;
+}
+*/
+#pitch{
+	padding:40px 20px;
+	text-align:center;
+	h3{
+		color:$blue;
+		text-align:center;
+		font-family:gi;
+		font-size:1.5em;
+	}
+	img{
+		border:10px solid black;
+		border-radius:40px;
+	}
+}
+
+#lead{
+}
+
+#test{
+	background:$bg-gray;
+	border:1px solid $border-gray;
+	.mid{
+		padding:40px 20px;
+	}
+	.clearfix{
+		margin-top:10px;
+		width:96%;
+		padding:0 2%;
+	}
+	p{
+		
+	}
+	form{
+		width:100%;
+		margin:0 auto;
+	}
+	h5{
+		color:$blue;
+		text-align:center;
+		font-family:gi;
+		font-size:1.5em;
+	}
+	input[type="url"]{
+		border:none;
+		padding:0;
+		margin:0;
+		border:1px solid $border-gray;
+		height:24px;
+		background:#fff;
+		@include border-radius(3px);
+		font-family:Helvetica;
+		font-size:1em;
+		color:$darkgray;
+		padding:3px 2%;
+		width:96%;
+	}
+	input[type="radio"]{
+		margin-left:10px;
+	}
+	label{
+		float:left;
+		width:50%;
+		display:block;
+		@include font-nb;
+		color:$black;
+		text-transform:uppercase;
+		font-size:0.875em;
+		display:block;
+		margin-bottom:10px;
+	}
+	input[type="submit"]{
+		@include blue-pill;
+	}
+}
+
+// majd .no-touch-ba hidden
+
+#try{
+	background:$bg-gray;
+	padding:10px 0;
+	text-align:center;
+	h3{
+		color:$blue;
+		text-align:center;
+		font-family:gi;
+		font-size:1.2em;
+		margin-top:0;
+	}
+	img{
+		cursor:pointer;
+		position:relative;
+		@include t-04;
+		&:hover,&:focus{
+			top:-1px;
+		}
+		&:active{
+			top:1px;
+		}
+	}
+}
+
+#resp,#lead,#mobile{
+	padding: 40px 20px;
+}
+
+#resp,#mobile{
+	.clearfix{
+		img{
+			margin:0 auto;
+		}
+	}
+}
+
+#price{
+	border:1px solid $border-gray;
+	background:$bg-gray;
+	padding-top:20px;
+	padding-bottom:20px;
+	.mid{
+		padding: 40px 20px;
+	}
+}
+
+#main{
+p{
+	line-height:1.5;
+}
+	h4{
+	@include font-nb;
+}
+
+h5{
+		font-family: gi;
+		font-weight:normal;
+		font-size:1.2em;
+	}
+
+	ul{
+		overflow:hidden;
+		li{
+			list-style-position:inside;
+			font-size:0.9em;
+			width:100%;
+			line-height:2;
+		}
+	}
+}
+
+.pron{
+	font-family:osi !important;
+	text-transform:none;
+	letter-spacing:normal;
+	color:$blue;
+	font-size:0.85em;
+}
+
+@media (min-width: 980px){
+	#resp,#mobile{
+		.clearfix{
+			p,img{
+				width:50%;
+				float:left;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+  .pron{
+  	display: block;
+  }	
+ }
+
+@media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+	#test{
+		form{
+			width:50%;
+			margin:0 auto;
+		}
+	}
+
+	#lead{
+		overflow:hidden;
+		p{
+			width:46%;
+			float: left;
+		}
+	}
+	#try{		
+		width:50%;
+		float: left;
+	}
+
+}

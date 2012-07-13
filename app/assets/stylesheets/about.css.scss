@@ -1,0 +1,13 @@
+@import '_mixins.css.scss';
+
+.person{
+	background:$bg-gray;
+	border:1px solid $border-gray;
+	.mid{
+		background: url(n.png) no-repeat left top;
+		div{
+			width:50%;
+			float:right;
+		}
+	}
+}
