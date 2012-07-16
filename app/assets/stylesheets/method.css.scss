@@ -13,9 +13,13 @@
 		font-family:gi;
 		font-size:1.5em;
 	}
+}
+
+#animgif{
+	@include at2x("iPhone",200px,392px);
+	max-width:100%;
+	height:392px;
 	img{
-		border:10px solid black;
-		border-radius:40px;
 	}
 }
 
@@ -96,6 +100,9 @@
 		cursor:pointer;
 		position:relative;
 		@include t-04;
+		&:last-child{
+			margin-left:8px;
+		}
 		&:hover,&:focus{
 			top:-1px;
 		}

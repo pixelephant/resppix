@@ -30,34 +30,46 @@
 
 #portfolio-nav{
   width:60%;
-  margin:20px auto 0 auto;
+  margin:30px auto 0 auto;
   overflow:hidden;
-  height:32px;
+  height:57px;
   position:relative;
   .control{
-    width:32px;
+    font-size:0.875em;
+    width:100px;
     height:32px;
+    padding-top:25px;
     position:absolute;
     cursor:pointer;
     opacity:0.8;
     @include t-04;
+    span{
+
+    }
     &:hover,&:focus{
       opacity:1;
     }
     &.left{
       @include at2x(left,18px,18px);
-      left:0;   
+      left:0;
+      background-position:center top;   
     }
     &.grid{
       @include at2x(grid,18px,18px);
       left:50%;
-      margin-left:-16px;
+      margin-left:-50px;
+      background-position:center top;
     }
     &.right{
       @include at2x(right,18px,18px);
       right:0;
+      background-position:center top;
     }
   }
+}
+
+#portfolio-image{
+  width:100%;
 }
 
 #text{
@@ -68,8 +80,7 @@
     @include font-nb;
   }
   div{
-    width:97%;
-    padding-left:3%;
+    
   }
   li{
     list-style: none;
@@ -95,28 +106,27 @@
 }
 
 /* Landscape phones and down */
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
   	#portfolio-grid{
   		margin-top:8%;
   	}
+
+    #text .clearfix div{
+      padding-left:3%;
+      width:97%;
+    }
   }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
-  	#text{
-      overflow:hidden;
+    
+    #text .clearfix{
       div{
-        padding-left:0;
         width:45%;
         float:left;
-        &:first-child{
-          width:100%;
-          float:none;
-        }
-        &:nth-child(2){
-          margin-right:5%;
-           width:45%;
-        float:left;
+        margin-right:10%;
+        &:nth-child(even){
+          margin-right:0;
         }
       }
     }
@@ -147,20 +157,6 @@
   }
 
 @media (min-width: 1400px) {
-  #text{
-      overflow:hidden;
-      div{
-        padding-left:0;
-        width:30% !important;
-        float:left;
-        margin-right:5% !important;
-         &:first-child{
-          float:left;
-         }
-        &:nth-child(2){
-          margin-right:0% !important;
-        }
-      }
-    }
+  
 
 }

@@ -7,7 +7,9 @@
 
 <section class="mid"id="pitch">
 	<h3>Találkozott már ezzel az “élménnyel„?</h3>
-	<%= image_tag "ny.gif" %>
+	<div id="animgif">
+		
+	</div>
 </section>
 
 <section class="mid" id="lead">
@@ -16,9 +18,7 @@
 	<div id="try">
 		<h3>Nézze meg hogyan adaptálódik ez az oldal!</h3>
 		<div class="clearfix">
-			<%= image_tag "iphone.png", "data-width" => 480 %>
-			<%= image_tag "ipad.png", "data-width" => 768 %>
-			<%= image_tag "imac.png", "data-width" => 1200 %>
+			<%= image_tag "phone_icon.png", "data-width" => 480 %> <%= image_tag "tablet_icon.png", "data-width" => 768 %> <%= image_tag "desktop_icon.png", "data-width" => 1200 %>
 		</div>
 	</div>
 </section>
@@ -80,5 +80,3 @@
 	</form>
 	</div>
 </section>
-
-<%= render "common/contact" %>
