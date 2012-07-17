@@ -9,6 +9,10 @@
 	&:nth-child(3),&:nth-child(6),&:nth-child(8){
 		border:1px solid $border-gray;
 		background: $bg-gray;
+		.text{
+			width:45%;
+			padding-left:5%;
+		}
 	}
 	h4{
 		height:50px;
@@ -304,6 +308,7 @@
 		figure,.text{
 			width:100% !important;
 			float:none !important;
+			padding:0 !important;
 		}
 		figure{
 			top:0;

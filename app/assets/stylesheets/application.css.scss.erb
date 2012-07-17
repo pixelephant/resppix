@@ -166,9 +166,6 @@ header{
 	padding:10px 3.125%;
 	#logo{
 		text-align:center;
-		a{
-			display:block;
-		}
 	}
 }
 
@@ -511,9 +508,14 @@ header{
 
 #contact-cta{
 	margin-top:80px;
-	padding:20px 0;
+	padding:20px 2%;
 	background:$blue;
 	color:#fff;
+	&.resp{
+		background-color:$blue;
+		@include at2x(resp_bg,170px,88px);
+		background-position:center center;
+	}
 	h4{
 		@include font-nb;
 		text-align:center;
@@ -670,6 +672,13 @@ footer{
   	}
   	#logo{
   		margin-top:10px;
+  		@include at2x("home",100px,140px);
+  		img{
+  			@include t(0.5s);
+  			&:hover,&:focus{
+  			opacity:0;
+  		}
+  		}
   	}
 
   	#main-nav{
