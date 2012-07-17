@@ -38,6 +38,12 @@
 		font-family: gi;
 		font-weight:normal;
 		font-size:1.2em;
+		height:32px;
+		line-height:32px;
+		img{
+			vertical-align:bottom;
+			margin-right:5px;
+		}
 	}
 	blockquote{
 		font-size:1.2em;
@@ -118,6 +124,16 @@
   	.service li{
   		width:50% !important;
   		float:left;
+  	}
+  }
+
+  @media (min-width: 768px){
+  	.extra{
+  		width:45%;
+  		float:left;
+  		&:nth-child(odd){
+  			margin-right:10%;
+  		}
   	}
   }
 
