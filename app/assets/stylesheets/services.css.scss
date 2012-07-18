@@ -61,6 +61,15 @@
 
 		}
 	}
+	.img{
+		display:block;
+		max-width:100%;
+		margin: 5% auto;
+	}
+	.text{
+		width:100%;
+		margin:0;
+	}
 }
 
 #weboldal h4{
@@ -140,6 +149,20 @@
   @media (min-width: 1400px) {
   	.service li{
   		width:33.3333333% !important;
+  	}
+
+  	.service .clearfix{
+  		.text{
+			width:45%;
+			float:left;
+			margin-right:5%;
+		}
+		.img{
+			display:block;
+			width:50%;
+			float:left;
+			margin:0;
+		}
   	}
 	
   }

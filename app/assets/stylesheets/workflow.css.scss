@@ -40,6 +40,23 @@
 	p{
 		line-height:1.5;
 	}
+	ul{
+		overflow:hidden;
+		li{
+			list-style-position:inside;
+			font-size:0.9em;
+			width:100%;
+			line-height:2;
+		}
+	}
+
+	h5{
+		font-family: gi;
+		font-weight:normal;
+		font-size:1.2em;
+		height:32px;
+		line-height:32px;
+	}
 }
 
 #enquiry-purple{
@@ -302,6 +319,26 @@
 	animation-name: bounceIn;
 }
 
+
+@media (max-width: 480px) {
+  	.step li{
+  		float:none !important;
+  		width:100%;
+  	}
+ }
+
+@media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  	.step li{
+  		width:50% !important;
+  		float:left;
+  	}
+  }
+
+  @media (min-width: 1400px) {
+  	.step li{
+  		width:33.3333333% !important;
+  	}
+  }
 
 @media (max-width: 767px) {
 	.step{
