@@ -248,11 +248,10 @@ header{
 			letter-spacing:1px;
 			color:$darkgray;
 			font-size:0.75em;
-			
 			&.active,&:focus,&:active{
 				background:#5E4177;
 				span{
-					display:inline;
+					opacity:1;
 				}
 			}
 			&:active{
@@ -261,7 +260,8 @@ header{
 			}
 		}
 		span{
-			display:none;
+			@include t-04;
+			opacity:0;
 		}
 		a{
 			color:white;
@@ -276,7 +276,7 @@ header{
 .no-touch #main-nav li:hover{
 	background:#5E4177;
 	span{
-		display:inline;
+		opacity:1;
 	}
 }
 
@@ -474,7 +474,7 @@ header{
 
 #main{
 	hgroup{
-		padding:20px 0;
+		padding:30px 0 20px 0;
 		margin:0;
 		border-bottom: 1px solid $border-gray;
 		text-align:center;
@@ -551,12 +551,13 @@ footer{
 			&.active,&:hover,&:focus,&:active{
 				background:$lightgray;
 				span{
-					display:inline;
+					opacity:1;
 				}
 			}
 		}
 		span{
-			display:none;
+			@include t-04;
+			opacity:0;
 		}
 		a{
 			color:#fff;
