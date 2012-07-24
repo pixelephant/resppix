@@ -1,6 +1,6 @@
 #encoding: utf-8
 class UserMailer < ActionMailer::Base
-  default :from => "contactform@pixelephant.hu"
+  default :from => "balazs.antal@pixelephant.hu"
 
   def contact_email(name,phone,email,brief)
   	@name = name
