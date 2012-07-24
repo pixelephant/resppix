@@ -12,6 +12,7 @@ $(document).ready(function(){
   		if (e.keyCode == 27) { $(".close").trigger("click"); }
 	});
 
+/*
 	$("#contact-form,#quote-form").submit(function(){
 
 		$(".close").eq(0).trigger("click");
@@ -22,7 +23,7 @@ $(document).ready(function(){
 
 		return false;
 	});
-
+*/
 	$("#mobile-menu").toggle(function(){
 		$("#main-nav").stop().animate({
 			marginTop: 0
@@ -78,6 +79,51 @@ $(document).ready(function(){
      }, 500, "easeInOutQuad");
 		
 		}
+		return false;
+	});
+
+	$("#quote-form").submit(function(){
+		$.ajax({
+      type: 'POST',
+      url: "/ajax/inquery",
+      data: {
+      	name : $("#quote-name").val(),
+      	email : $("#quote-email").val(),
+      	phone : $("#quote-phone").val(),
+      	brief : $("#quote-brief").val(),
+      	name : $("#quote-budget").val()
+      },
+      success: function(resp){
+        if(resp.error == 'none'){
+          $(".close").eq(0).trigger("click");
+					$("#thank-you").animate({
+						marginTop: 0,
+						zIndex: 3
+					},500, "easeInOutQuad");
+        }
+    }});
+		return false;
+	});
+
+	$("#contact-form").submit(function(){
+		$.ajax({
+      type: 'POST',
+      url: "/ajax/contact",
+      data: {
+      	name : $("#contact-name").val(),
+      	email : $("#contact-email").val(),
+      	phone : $("#contact-phone").val(),
+      	brief : $("#contact-brief").val()
+      },
+      success: function(resp){
+        if(resp.error == 'none'){
+          $(".close").eq(0).trigger("click");
+					$("#thank-you").animate({
+						marginTop: 0,
+						zIndex: 3
+					},500, "easeInOutQuad");
+        }
+    }});
 		return false;
 	});
 
