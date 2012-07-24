@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
 
   def contact_email(name,phone,email,brief)
   	@name = name
-  	@phone = @phone
+  	@phone = phone
   	@email = email
   	@brief = brief
     mail(:to => "balazs.antal@pixelephant.hu", :subject => "Kontakt")
@@ -12,7 +12,7 @@ class UserMailer < ActionMailer::Base
 
   def inquery_email(name,phone,email,brief,budget)
   	@name = name
-  	@phone = @phone
+  	@phone = phone
   	@email = email
   	@brief = brief
   	@budget = budget

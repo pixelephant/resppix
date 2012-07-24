@@ -91,7 +91,7 @@ $(document).ready(function(){
       	email : $("#quote-email").val(),
       	phone : $("#quote-phone").val(),
       	brief : $("#quote-brief").val(),
-      	name : $("#quote-budget").val()
+      	budget : $("#quote-budget").val()
       },
       success: function(resp){
         if(resp.error == 'none'){
