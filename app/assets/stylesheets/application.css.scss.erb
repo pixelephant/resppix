@@ -155,7 +155,7 @@ p{
 
 
 #header-inner,#main-nav-inner,#contact-inner,#contact-options-inner,#form-wrap,.mid,#main-footer .in{
-	max-width:1400px;
+	max-width:960px;
 	margin:0 auto;
 }
 
@@ -622,7 +622,7 @@ footer{
   }
 
    /* NOT mobile */
-  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
+  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1200px){
 
   	#contact{
   		margin-top:-535px;
@@ -717,8 +717,35 @@ footer{
 }
  
   /* Large desktop */
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
   	#main-nav{
   		
+  	}
+  }
+
+
+
+ @media (max-width: 979px){
+  	.mid{
+  		font-size:1em;
+  		p{
+  			line-height:1.5;
+  		}
+  		h5{
+  			font-size:1.1875em;
+  		}
+  	}
+  }
+
+ @media (min-width: 980px) and (max-width: 1399px), (min-width: 1200px){
+  
+  	.mid{
+  		font-size:1.3125em;
+  		p{
+  			line-height:1.5;
+  		}
+  		h5{
+  			font-size:1.19047619em;
+  		}
   	}
   }
