@@ -4,6 +4,14 @@
 	margin:0;
 }
 
+.side{
+	display:block;
+	img{
+		margin:0 auto;
+		display:block;
+	}
+}
+
 .service{
 	.mid{
 		padding:40px 20px;
@@ -16,10 +24,6 @@
 			width:100%;
 			line-height:2;
 		}
-	}
-	&:nth-child(odd){
-		border:1px solid $border-gray;
-		background: $bg-gray;
 	}
 	h4{
 		height:50px;
@@ -54,14 +58,7 @@
 
 		}
 	}
-	.img{
-		display:block;
-		max-width:100%;
-		margin: 5% auto;
-	}
-	.text{
-		width:100%;
-	}
+	
 }
 
 #weboldal h4{
@@ -123,7 +120,7 @@
 
 
 
-  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1200px){
+  @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
  
 
   	.service li{
@@ -142,13 +139,19 @@
   	}
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) {
   	.service li{
   		width:33.3333333% !important;
   	}
-
-  	.service{
-  		
+  	.side{
+  		float:left;
+  		width:25%;
+  		margin-right:5%;
+  		margin-top:5%;
+  	}
+  	.text{
+  		float:left;
+  		width:70%;
   	}
 	
   }
