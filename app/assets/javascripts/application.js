@@ -8,6 +8,22 @@
 
 $(document).ready(function(){
 
+
+  var top = $('#main-nav').offset().top;
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+  
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+      $('#main-nav').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('#main-nav').removeClass('fixed');
+    }
+  });
+
 	$(document).keyup(function(e) {
   		if (e.keyCode == 27) { $(".close").trigger("click"); }
 	});
