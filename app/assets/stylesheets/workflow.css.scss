@@ -5,14 +5,15 @@
 }
 
 
+.side{
+	display:block;
+}
+
 .step{
 	&:nth-child(3),&:nth-child(6),&:nth-child(8){
 		border:1px solid $border-gray;
 		background: $bg-gray;
-		.text{
-			width:45%;
-			padding-left:5%;
-		}
+		
 	}
 	h4{
 		height:50px;
@@ -22,14 +23,10 @@
 	.mid{
 		padding:40px 20px;
 	}
-
-	.text,figure{
-		width:50%;
-		float:left;
-	}
 	figure{
 		position:relative;
 		max-width:400px;
+		margin:0 auto;
 	}
 	figure img{
 		max-width:100%;
@@ -337,6 +334,15 @@
   @media (min-width: 1400px) {
   	.step li{
   		width:33.3333333% !important;
+  	}
+  	.side{
+  		float:right;
+  		width:25%;
+  		margin-right:5%;
+  	}
+  	.text{
+  		float:right;
+  		width:70%;
   	}
   }
 
