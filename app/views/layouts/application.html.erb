@@ -157,14 +157,7 @@
 
 <nav id="main-nav">
 	<div id="main-nav-inner">
-		<ul>
-			<li><a href="/services"><span aria-hidden="true">&#x25cf;</span> Szolgáltatások <span aria-hidden="true">&#x25cf;</span></a> </li>
-			<li><a href="/method"><span aria-hidden="true">&#x25cf;</span> Szemlélet <span aria-hidden="true">&#x25cf;</span></a> </li>
-			<li><a href="/portfolio"><span aria-hidden="true">&#x25cf;</span> Portfólió <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li><a href="/workflow"><span aria-hidden="true">&#x25cf;</span> Munkafolyamat <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li><a href="/about"><span aria-hidden="true">&#x25cf;</span> Rólunk <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li class="quote-button"><a href="#"><span aria-hidden="true">&#x25cf;</span> Kapcsolat <span aria-hidden="true">&#x25cf;</span></a> </li>
-		</ul>
+		<%= render 'common/nav' %>
 	</div>
 </nav>
 
@@ -178,15 +171,8 @@
 <footer id="main-footer">
 	<div class="in">
 		<nav>
-		<ul>
-			<li><a href="/services"><span aria-hidden="true">&#x25cf;</span> Szolgáltatások <span aria-hidden="true">&#x25cf;</span></a> </li>
-			<li><a href="/method"><span aria-hidden="true">&#x25cf;</span> Szemlélet <span aria-hidden="true">&#x25cf;</span></a> </li>
-			<li><a href="/portfolio"><span aria-hidden="true">&#x25cf;</span> Portfólió <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li><a href="/workflow"><span aria-hidden="true">&#x25cf;</span> Munkafolyamat <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li><a href="/about"><span aria-hidden="true">&#x25cf;</span> Rólunk <span aria-hidden="true">&#x25cf;</span></a></li>
-			<li class="quote-button"><a href="#"><span aria-hidden="true">&#x25cf;</span> Kapcsolat <span aria-hidden="true">&#x25cf;</span></a> </li>
-		</ul>
-	</nav>
+			<%= render 'common/nav' %>		
+		</nav>
 	<p id="social">
 		<a href="https://twitter.com/pixelephant" class="twitter-follow-button" data-show-count="false" data-lang="hu">@pixelephant követése</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

@@ -49,6 +49,12 @@ Resppix::Application.routes.draw do
   post '/ajax/inquery' => 'ajax#inquery'
   post '/ajax/contact' => 'ajax#contact'
 
+  match '/szolgaltatasok' => 'services#index', :as => :services
+  match '/szemlelet' => 'method#index', :as => :method
+  match '/portfolio' => 'portfolio#index', :as => :portfolio
+  match '/munkafolyamat' => 'workflow#index', :as => :workflow
+  match '/rolunk' => 'about#index', :as => :about
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
