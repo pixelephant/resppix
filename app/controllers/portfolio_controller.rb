@@ -21,6 +21,6 @@ class PortfolioController < ApplicationController
 
 		@prev = PORTFOLIO_ORDER[PORTFOLIO_ORDER.index(params[:item])-1]
 
-		render "show_#{params[:item][0]}"
+		render "show_#{params[:item][0,1]}"
 	end
 end
