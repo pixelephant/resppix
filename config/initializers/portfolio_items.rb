@@ -3,39 +3,39 @@ PORTFOLIO_ORDER = []
 PORTFOLIO_ORDER << "flairspring"
 PORTFOLIO_ORDER << "ewutazas"
 PORTFOLIO_ORDER << "utransfer"
+PORTFOLIO_ORDER << "siklosdentalstudio"
 PORTFOLIO_ORDER << "tenderfigyelo"
 PORTFOLIO_ORDER << "xtraveltrix"
-PORTFOLIO_ORDER << "siklosdentalstudio"
 
 PORTFOLIO_ITEMS = {
 										"flairspring" => {
-											"desc" => "Desc",
-											"title" => "Desc",
+											"desc" => "Webáruházfejlesztés, arculattervezés a lakrberendezéssel foglalkozó Flairspring Kft. számára.",
+											"title" => "Portfólió: Flairspring",
 											"name" => "Flairspring"
 										},
 										"ewutazas" => {
-											"desc" => "Descew",
-											"title" => "Descew",
+											"desc" => "Weboldalkészítés és webmarketing az East-West utazási iroda számára.",
+											"title" => "Portfólió: East-West utazási iroda",
 											"name" => "EW Utazás"
 										},
 										"utransfer" => {
-											"desc" => "Descewutr",
-											"title" => "Descewutr",
+											"desc" => "Honlapkészítés és arculattervezés a uTransfer Hungary számára.",
+											"title" => "Portfólió: uTransfer Hungary",
 											"name" => "uTransfer"
 										},
+										"siklosdentalstudio" => {
+											"desc" => "Arculattervezés, honlapkészítés a Siklós Dental Studió számára.",
+											"title" => "Portfólió: Siklós Dental Studió",
+											"name" => "Siklós Dental Studió"
+										},
 										"tenderfigyelo" => {
-											"desc" => "Tender",
-											"title" => "Tenderfigyelő",
+											"desc" => "Arculattervezés és webalkalmazás fejlesztés a tenderfigyelo.com szolgáltatás számára",
+											"title" => "Portfólió: Tenderfigyelő.com",
 											"name" => "Tenderfigyelő"
 										},
 										"xtraveltrix" => {
-											"desc" => "Traveltrix",
-											"title" => "Traveltrix",
+											"desc" => "Arculattervezés a Traveltrix számára",
+											"title" => "Portfólió: Traveltrix",
 											"name" => "Traveltrix"
-										},
-										"siklosdentalstudio" => {
-											"desc" => "Siklós",
-											"title" => "Siklós Dental Studió",
-											"name" => "Siklós Dental Studió"
 										}
 									}
