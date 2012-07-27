@@ -49,6 +49,8 @@ Resppix::Application.routes.draw do
   post '/ajax/inquery' => 'ajax#inquery'
   post '/ajax/contact' => 'ajax#contact'
 
+  match '/portfolio/:item' => 'portfolio#show'
+
   match '/szolgaltatasok' => 'services#index', :as => :services
   match '/szemlelet' => 'method#index', :as => :method
   match '/portfolio' => 'portfolio#index', :as => :portfolio
