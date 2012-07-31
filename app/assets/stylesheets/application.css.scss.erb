@@ -547,6 +547,7 @@ footer{
 	ul{
 		border-bottom:1px solid $border-gray;
 		color:#fff;
+		margin:0;
 		li{
 			list-stlye:none;
 			width:100%;
@@ -591,13 +592,22 @@ footer{
 
 #social{
 	text-align:center;
-	iframe{
-		display:inline;
-		position:relative;
-		top:1px;
-		&:first-child{
-			top:0;
+	margin: 40px 0;
+	a{
+		width:33.333333%;
+		margin:0 2%;
+		opacity:0.3;
+		@include t-04;
+		&:hover,&:focus{
+			opacity:1;
 		}
+		&:active{
+			position:relative;
+			top:1px;
+		}
+	}
+	img{
+		max-width:100%;
 	}
 }
 
@@ -658,7 +668,6 @@ footer{
   	footer{
   		ul{
   			border:none;
-  			margin-bottom:100px;
   			overflow:hidden;
   			li{
   				float:left;
