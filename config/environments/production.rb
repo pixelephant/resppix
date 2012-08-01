@@ -48,7 +48,7 @@ Resppix::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
 #  config.assets.precompile += %w( about.css, home.css, method.css, portfolio.css, services.css, workflow.css, normalize.css, home.js, jquery.appear.min.js, jquery.easing.js, jquery.fittext.js, method.js, modernizr.js, portfolio.js, services.js, workflow.js)
 
-config.assets.precompile += ['about.js', 'home.js', 'jquery.appear.min.js', 'jquery.easing.js', 'jquery.fittext.js', 'method.js', 'modernizr.js', 'portfolio.js', 'services.js', 'workflow.js']
+config.assets.precompile += ['about.js', 'home.js', 'jquery.appear.min.js', 'jquery.easing.js', 'jquery.fittext.js', 'method.js', 'modernizr.js', 'portfolio.js', 'services.js', 'workflow.js', 'retina.js', 'retina_image.js', 'retina_image_path.js']
 config.assets.precompile += ['about.css','home.css', 'method.css', 'normalize.css','portfolio.css', 'services.css', 'workflow.css']
 
   # Disable delivery errors, bad email addresses will be ignored
