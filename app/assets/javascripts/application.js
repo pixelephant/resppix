@@ -7,20 +7,21 @@
 
 $(document).ready(function(){
 
-	var topos = $("#main-nav").offset().top;
-	$("#logo img").load(function(){
-		topos = $("#main-nav").offset().top;
-	});
+	
+		var topos = $("#main-nav").offset().top;
+		$("#logo img").load(function(){
+			topos = $("#main-nav").offset().top;
+		});
 
-  $(window).scroll(function (event) {
-    var y = $(window).scrollTop();
+	  $(window).scroll(function (event) {
+	    var y = $(window).scrollTop();
 
-    if (y >= topos) {
-      $('#main-nav').addClass('fixed').next().css("padding-top","50px");
-    } else {
-      $('#main-nav').removeClass('fixed').next().css("padding-top","0");
-    }
-  });
+	    if (y >= topos){
+	      $('#main-nav').addClass('fixed').next().addClass("xpad");
+	    } else {
+	      $('#main-nav').removeClass('fixed').next().removeClass("xpad");
+	    }
+	  });
 
 	$(document).keyup(function(e) {
   		if (e.keyCode == 27) { $(".close").trigger("click"); }

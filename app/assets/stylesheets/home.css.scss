@@ -63,7 +63,6 @@
 		margin:30px 0;
 		text-align:center;
 	}
-	border-bottom:1px solid $border-gray;
 }
 
 #webdesign h4{
@@ -85,11 +84,18 @@
 #portfolio{
 	border-bottom:1px solid $border-gray;
 	@include portfolio-style;
+	.cta{
+		text-align:center;
+		margin:30px 0;
+		position:relative;
+		z-index:2;
+	}
 }
 
 #work{
 	border-bottom:1px solid $border-gray;
 	min-height:400px;
+
 }
 
 #about{
@@ -120,7 +126,7 @@
 	
 }
 
-#work{
+#work,#method{
 	p{
 		font-size:0.875em;
 		line-height:1.5;
@@ -195,9 +201,16 @@
  	display:block;
 }
 
+#method{
+	border-bottom:1px solid $border-gray;
+	figure{
+		top:80px;
+	}
+}
+
 /* Landscape phones and down */
   @media (max-width: 480px) {
-  	#work .text{
+  	#work .text,#method .text{
   		margin-top:40px;
   	}
   	#welcome h3{
@@ -212,7 +225,7 @@
 
 @media (max-width: 767px) {
 
-	#work{
+	#work,#method{
 		figure,.text{
 			width:100% !important;
 			float:none !important;
@@ -254,7 +267,7 @@
 
 @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
 
-#work p{
+#work p,#method p{
 	font-size:1em !important;
 }
 
