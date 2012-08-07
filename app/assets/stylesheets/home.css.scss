@@ -274,6 +274,8 @@
 .s-el{
   		width:48%;
   		float:left;
+  		text-decoration:none;
+ 		color:$black;
   		&:nth-child(odd){
   			margin-right:4%;
   		}
