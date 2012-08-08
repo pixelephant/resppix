@@ -5,12 +5,8 @@ $(window).load(function(){
 $('.animated').appear(function(){
    		$(this).addClass("bounceIn");
 	});
-
-});
-
-$(document).ready(function(){
-
-		$('#testing_enter').click(function() {
+	
+	$('#testing_enter').click(function() {
 		  $('#testing_rocket').animate({
 		    top: "-160%"
 		  }, 1500,"easeInOutExpo", function() {
@@ -20,4 +16,5 @@ $(document).ready(function(){
 		    })
 		  });
 		});
+
 });

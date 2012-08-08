@@ -187,7 +187,8 @@
 	z-index:1;
 }
 
-.animated {
+.no-touch{
+	.animated {
 	-webkit-animation-fill-mode: both;
 	-moz-animation-fill-mode: both;
 	-ms-animation-fill-mode: both;
@@ -314,6 +315,7 @@
 	-ms-animation-name: bounceIn;
 	-o-animation-name: bounceIn;
 	animation-name: bounceIn;
+}
 }
 
 
