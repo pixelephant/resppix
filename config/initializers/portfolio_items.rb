@@ -1,5 +1,6 @@
 #encoding: utf-8
 PORTFOLIO_ORDER = []
+PORTFOLIO_ORDER << "maform"
 PORTFOLIO_ORDER << "flairspring"
 PORTFOLIO_ORDER << "ewutazas"
 PORTFOLIO_ORDER << "utransfer"
@@ -8,6 +9,11 @@ PORTFOLIO_ORDER << "tenderfigyelo"
 PORTFOLIO_ORDER << "xtraveltrix"
 
 PORTFOLIO_ITEMS = {
+										"maform" => {
+											"desc" => "Reszponzív weboldal készítés a Maform számára.",
+											"title" => "Portfólió: Maform",
+											"name" => "Maform"
+										},
 										"flairspring" => {
 											"desc" => "Webáruházfejlesztés, arculattervezés a lakrberendezéssel foglalkozó Flairspring Kft. számára.",
 											"title" => "Portfólió: Flairspring",

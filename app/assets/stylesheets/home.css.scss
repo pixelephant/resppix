@@ -267,6 +267,10 @@
 
 @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
 
+.p-el .title{
+        padding:0 !important;
+      }
+
 #work p,#method p{
 	font-size:1em !important;
 }

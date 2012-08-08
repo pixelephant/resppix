@@ -1,6 +1,6 @@
 //= require jquery.appear.min
 
-$(document).ready(function(){
+$(window).load(function(){
 
 $('.animated').appear(function(){
    		$(this).addClass("bounceIn");

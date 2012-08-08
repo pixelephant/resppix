@@ -31,6 +31,8 @@
 				if( !picImg ){
 					picImg = w.document.createElement( "img" );
 					picImg.alt = ps[ i ].getAttribute( "data-alt" );
+					picImg.className = ps[ i ].getAttribute( "data-class" );
+					picImg.id = ps[ i ].getAttribute( "data-id" );
 					ps[ i ].appendChild( picImg );
 				}
 				

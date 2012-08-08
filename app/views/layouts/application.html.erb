@@ -125,7 +125,13 @@
 		<div id="header-inner">
 			<figure id="logo">
 				<a href="/">
-					<img src="/assets/logo.png" alt="Pixelephant Media logó" />
+					<div data-picture data-alt="Pixelephant Media logó">
+						<div data-src="/assets/logo.png"></div>
+		        		<div data-src="/assets/logo@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+		        		<noscript>
+		            		<img src="/assets/logo.png" alt="Pixelephant Media logó">
+		        		</noscript>
+					</div>
 				</a>
 			</figure>
 			<% if params[:controller] == 'home'%>
@@ -173,11 +179,36 @@
 		<nav>
 			<%= render 'common/nav' %>		
 		</nav>
-	<p id="social">
-		<a href="https://www.facebook.com/pixelephant"><%= image_tag 'facebook.png', :alt => 'Pixelephant Facebook oldal' %></a>
-		<a href="https://twitter.com/pixelephant"><%= image_tag 'twitter.png', :alt =>  'Pixelephant Twitter oldal' %></a>
-		<a href="http://www.behance.net/pixelephant"><%= image_tag 'behance.png', :alt =>  'Pixelephant Behance oldal' %></a>
-	</p>
+		<div id="social">
+			<a href="https://www.facebook.com/pixelephant">
+				<div data-picture data-alt="Pixelephant Facebook oldal">
+					<div data-src="/assets/facebook.png"></div>
+					<div data-src="/assets/facebook@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+					<noscript>
+						<img src="/assets/logo.png" alt="Pixelephant Facebook oldal">
+					</noscript>
+				</div>
+			</a>
+			<a href="https://twitter.com/pixelephant">
+				<div data-picture data-alt="Pixelephant Twitter oldal">
+					<div data-src="/assets/twitter.png"></div>
+					<div data-src="/assets/twitter@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+					<noscript>
+						<img src="/assets/logo.png" alt="Pixelephant Twitter oldal">
+					</noscript>
+				</div>
+			</a>
+			<a href="http://www.behance.net/pixelephant">
+				<div data-picture data-alt="Pixelephant Behance oldal">
+					<div data-src="/assets/behance.png"></div>
+					<div data-src="/assets/behance@2x.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+					<noscript>
+						<img src="/assets/logo.png" alt="Pixelephant Behance oldal">
+					</noscript>
+				</div>
+			</a>
+		</div>
+	
 	<p><a href="tel:+36204944631">+36-20-4944-631</a> | <a href="mailto:pixelephant@pixelephant.hu">pixelephant@pixelephant.hu</a> | <a href="http://goo.gl/maps/WH53">1107 Budapest, Árpa u. 8</a></p>
 	<p>&copy; Pixelephant Media Kft. - Minden jog fenntartva.</p>
 	</div>

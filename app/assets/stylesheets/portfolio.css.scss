@@ -1,7 +1,7 @@
 @import '_mixins.css.scss';
 
 .p-el{
-  height:460px;
+  
 }
 
 .study{
@@ -142,6 +142,10 @@
   				margin-right:4%;
   			}
   		}
+
+      #portfolio-grid .title{
+        padding:0;
+      }
   }
 
   @media (min-width: 1400px) {
