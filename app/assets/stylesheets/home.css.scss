@@ -138,13 +138,13 @@
 		float:left;
 	}
 	.text{
-		margin-top:15%;
+		margin-top:5%;
 		padding-left:3%;
 		width:47%;
 	}
 	figure{
 		position:relative;
-		max-width:400px;
+		
 		top:40px;
 	}
 	figure img{
@@ -162,23 +162,27 @@
 }
 
 #research-green{
-	top:40%;
-	left:70%;
+	top:28%;
+	left:60%;
+	max-width:60px !important;
 }
 
 #research-yellow{
-	top:17%;
-	left:38%;
+	top:0%;
+	left:45%;
+	max-width:60px !important;
 }
 
 #research-orange{
-	top:65%;
+	top:60%;
 	left:45%;
+	max-width:60px !important;
 }
 
 #research-red{
-	top:40%;
-	left:14%;
+	top:24%;
+	left:28%;
+	max-width:60px !important;
 }
 
 
