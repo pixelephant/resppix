@@ -188,6 +188,14 @@
 }
 
 .no-touch{
+	.bounceIn {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-ms-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+}
 	.animated {
 	-webkit-animation-fill-mode: both;
 	-moz-animation-fill-mode: both;
@@ -309,14 +317,7 @@
 	}
 }
 
-.bounceIn {
-	-webkit-animation-name: bounceIn;
-	-moz-animation-name: bounceIn;
-	-ms-animation-name: bounceIn;
-	-o-animation-name: bounceIn;
-	animation-name: bounceIn;
-}
-}
+
 
 
 @media (max-width: 480px) {

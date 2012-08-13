@@ -1,16 +1,21 @@
 @import '_mixins.css.scss';
 
+
+
 .person{
-	padding:0 5%;
-	.text{
-		float:left;
-		width:60%;
+	.like{
+		display:inline-block;
 	}
+
+	&:nth-child(odd){
+		background:$bg-gray;
+		border:1px solid $border-gray;
+	}
+	padding:5%;
+	
 	.side{
-		width:25%;
-		float:left;
-		margin-right:5%;
-		margin-top:5%;
+		max-width:50%;
+		margin:30px auto 0 auto;
 	}
 	h4{
 		@include font-nb;
@@ -24,3 +29,16 @@
 		margin-top:0;
 	}
 }
+
+ @media (min-width: 768px){
+  	.side{
+		width:25%;
+		float:left;
+		margin-right:5% !important;
+		margin-top:5%;
+	}
+	.text{
+		float:left;
+		width:60%;
+	}
+  }

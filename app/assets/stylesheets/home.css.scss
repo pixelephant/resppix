@@ -100,9 +100,10 @@
 
 #about{
 	position:relative;
-	min-height:400px;
+	min-height:500px;
 	p{
-		font-size:0.875em;
+		position: absolute;
+		bottom:0;
 		line-height:1.5;
 		margin-left:30%;
 		margin-top:10%;
@@ -116,7 +117,8 @@
 		zoom: 1;
 		float:right;
 	}
-	background: url(about.png) no-repeat left bottom;
+	@include at2x(about, 700px, 400px);
+	background-position:left bottom;
 }
 
 #portfolio p{
@@ -309,6 +311,13 @@
 }
 
 .no-touch{
+	.bounceIn {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-ms-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
 	#welcome{
 	a{
 		display:none;
@@ -554,10 +563,3 @@
 	}
 }
 
-.bounceIn {
-	-webkit-animation-name: bounceIn;
-	-moz-animation-name: bounceIn;
-	-ms-animation-name: bounceIn;
-	-o-animation-name: bounceIn;
-	animation-name: bounceIn;
-}
