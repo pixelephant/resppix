@@ -1,5 +1,3 @@
-//= require jquery
-//= require jquery_ujs
 //= require jquery.easing
 
 
@@ -42,7 +40,23 @@ $(document).ready(function(){
 		return false;
 	});
 */
+	
+
+	
 	$("#mobile-menu").toggle(function(){
+		$("#main-nav").addClass("opened");
+		$(this).addClass("active");
+		return false;
+	},function(){
+		$("#main-nav").removeClass("opened");
+		$(this).removeClass("active");
+		return false;
+	});
+
+
+//EZ KELL HA NEM TÁMOGATOTT A CSS TRANSITION
+
+	/*$("#mobile-menu").toggle(function(){
 		$("#main-nav").stop().animate({
 			marginTop: 0
 		},300,function(){
@@ -75,11 +89,25 @@ $(document).ready(function(){
 
 		return false;
 	});
-
+	
 	$(".close").click(function(){
 		$("#contact").animate({
 			marginTop: -535
 		},500, "easeInOutQuad");
+		return false;
+	});
+
+*/
+
+	$(".quote-button").click(function(){
+		 $('html, body').animate({scrollTop:0}, 'fast',function(){
+		 	$("#contact").addClass("opened");
+		 });
+		return false;
+	});
+	
+	$(".close").click(function(){
+		$("#contact").removeClass("opened");
 		return false;
 	});
 
@@ -114,10 +142,12 @@ $(document).ready(function(){
       success: function(resp){
         if(resp.error == 'none'){
           $(".close").eq(0).trigger("click");
+          /* HA NINCS TRANSITION
 					$("#thank-you").animate({
 						marginTop: 0,
 						zIndex: 3
-					},500, "easeInOutQuad");
+					},500, "easeInOutQuad");*/
+          $("#thank-you").addClass("opened");
         }
     }});
 		return false;
@@ -136,10 +166,12 @@ $(document).ready(function(){
       success: function(resp){
         if(resp.error == 'none'){
           $(".close").eq(0).trigger("click");
+          $("#thank-you").addClass("opened");
+          /* HA NINCS TRANSITION
 					$("#thank-you").animate({
 						marginTop: 0,
 						zIndex: 3
-					},500, "easeInOutQuad");
+					},500, "easeInOutQuad");*/
         }
     }});
 		return false;
