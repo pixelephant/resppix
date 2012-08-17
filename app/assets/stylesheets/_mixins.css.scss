@@ -147,15 +147,17 @@ $yellow: #ffda00;
 		color:$black;
 		margin-top:60px;
 		&:hover{
-				.img{
-					//transform: scale(1.1);
-					//-webkit-transform: scale(1.1);
-					box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.1);
+				.img img{
+					-webkit-transform:none;
+		    		-moz-transform:none;
+		    		-o-transform:none;
+		    		transform:none;
 				}
     			img{
     				-webkit-transform:rotate(360deg);
 		    		-moz-transform:rotate(360deg);
 		    		-o-transform:rotate(360deg);
+		    		transform:rotate(360deg);
     			}
     		}
 	}
@@ -163,7 +165,6 @@ $yellow: #ffda00;
 		width:100%;
 		background: $bg-gray;
 		text-align:center;
-		@include t(0.2s);
 	}
 	.title{
 		padding:0 20px;
@@ -178,6 +179,8 @@ $yellow: #ffda00;
 			margin-top:0;
 		}
 		img{
+			
+
 			position:absolute;
 			left:50%;
 			margin-left:-25px;

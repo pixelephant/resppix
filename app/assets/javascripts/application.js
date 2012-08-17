@@ -45,10 +45,12 @@ $(document).ready(function(){
 	
 	$("#mobile-menu").toggle(function(){
 		$("#main-nav").addClass("opened");
+		$("#mobile-nav").addClass("nobo");
 		$(this).addClass("active");
 		return false;
 	},function(){
 		$("#main-nav").removeClass("opened");
+		$("#mobile-nav").removeClass("nobo");
 		$(this).removeClass("active");
 		return false;
 	});
