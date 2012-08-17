@@ -1,10 +1,15 @@
 @import '_mixins.css.scss';
 
-
+#contact-cta{
+	margin-top:0;
+}
 
 .person{
 	.like{
 		display:inline-block;
+		img{
+			max-width:80%;
+		}
 	}
 
 	&:nth-child(odd){

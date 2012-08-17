@@ -16,6 +16,7 @@
 		
 	}
 	h4{
+		margin-top:0;
 		height:50px;
 		@include font-nb;
 		color:$black;
@@ -339,12 +340,12 @@
   		width:33.3333333% !important;
   	}
   	.side{
-  		float:right;
+  		float:left;
   		width:25%;
   		margin-right:5%;
   	}
   	.text{
-  		float:right;
+  		float:left;
   		width:70%;
   	}
   }

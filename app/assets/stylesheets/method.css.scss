@@ -1,9 +1,9 @@
 @import '_mixins.css.scss';
 
-/*.mid{
-		padding:40px 20px;
+#contact-cta{
+	margin-top:0;
 }
-*/
+
 #pitch{
 	padding:40px 20px;
 	
@@ -31,20 +31,20 @@ figure{
 
 #heart-green{
 	max-width:20%;
-	top:30%;
-	left:79%;
+	top:25%;
+	left:40%;
 }
 
 #heart-yellow{
 	max-width:20%;
-	left:24%;
-	top:52%;
+	left:25%;
+	top:60%;
 }
 
 #heart-orange{
 	max-width:20%;
-	left:6%;
-	top:52%;
+	left:75%;
+	top:45%;
 }
 
 #test{
@@ -90,7 +90,7 @@ figure{
 	}
 	label{
 		float:left;
-		width:50%;
+		margin-right:20px;
 		display:block;
 		@include font-nb;
 		color:$black;
@@ -129,9 +129,10 @@ figure{
 }
 
 .touch{
-	#try{
+	#try,#tryp{
 		display:none;
 	}
+
 }
 
 #resp,#lead,#mobile{
@@ -215,8 +216,22 @@ h5{
 @media (max-width: 480px) {
   .pron{
   	display: block;
-  }	
+  }
  }
+
+@media (max-width: 767px) {
+	#heart-green{
+		max-width:10%;
+	}
+
+	#heart-yellow{
+		max-width:10%;
+	}
+
+	#heart-orange{
+		max-width:10%;
+	}  
+}
 
 @media (min-width: 768px) and (max-width: 1399px), (min-width: 1400px){
 	#test{

@@ -146,7 +146,9 @@
   	.service li{
   		width:33.3333333% !important;
   	}
-  	.side{
+  }
+@media (min-width: 1200px) {
+	.side{
   		float:left;
   		width:25%;
   		margin-right:5%;
@@ -156,5 +158,5 @@
   		float:left;
   		width:70%;
   	}
-	
-  }
+
+}

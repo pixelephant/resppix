@@ -1,4 +1,4 @@
-$purple:#6b468d;
+ $purple:#6b468d;
 $darkgray:#6d6e71;
 $lightgray:#929497;
 $black:#535352;
@@ -144,7 +144,8 @@ $yellow: #ffda00;
 	.p-el{
 		display:block;
 		text-decoration:none;
-		color:$black; 
+		color:$black;
+		margin-top:60px;
 		&:hover{
 				.img{
 					//transform: scale(1.1);
@@ -171,7 +172,10 @@ $yellow: #ffda00;
 		h4{
 			@include font-nb;
 			font-size:0.9375em;
-			margin:30px 0 20px 0;
+			margin:30px 0 0px 0;
+		}
+		p{
+			margin-top:0;
 		}
 		img{
 			position:absolute;
