@@ -1,5 +1,9 @@
 @import '_mixins.css.scss';
 
+hgroup{
+  padding-bottom:10px !important;
+}
+
 .p-el{
   
 }
@@ -31,16 +35,18 @@
 #portfolio-nav{
   width:60%;
   margin:30px auto 0 auto;
-  overflow:hidden;
-  height:57px;
+  height:70px;
   position:relative;
+  a{
+    text-decoration:none !important;
+  }
   .link{
     color:$black;
+    text-decoration:none !important;
   }
   .control{
     font-size:0.875em;
     width:100px;
-    height:32px;
     padding-top:25px;
     position:absolute;
     cursor:pointer;
@@ -108,7 +114,13 @@
   }
 }
 
-/* Landscape phones and down */
+
+  @media (max-width: 480px){
+    #portfolio-nav{
+      width:80%;
+    }
+  }
+
   @media (max-width: 767px) {
   	#portfolio-grid{
   		margin-top:8%;
