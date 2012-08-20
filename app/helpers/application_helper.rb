@@ -1,7 +1,11 @@
 module ApplicationHelper
 
 	def menu_active(controller)
-		return current_page?(:controller => controller) ? ' class=active' : ''
+		if current_page?(:controller => controller, :action => 'show')
+			return ' class=active'
+		elsif current_page?(:controller => controller)
+			return ' class=active'
+		end
 	end
 
 end
