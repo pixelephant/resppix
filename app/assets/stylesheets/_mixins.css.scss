@@ -69,7 +69,7 @@ $yellow: #ffda00;
 
 @mixin blue-pill{
 	@include font-nb;
-	font-size:0.75em;
+	font-size:0.75em !important;
 	@include t-04;
 	text-decoration:none;
 	color: #ffffff;

@@ -142,8 +142,12 @@ figure{
 
 #resp,#mobile{
 	.clearfix{
-		img{
+		figure{
 			margin:0 auto;
+			text-align:center;
+			h5{
+				margin-top:0;
+			}
 		}
 	}
 }
@@ -183,14 +187,6 @@ h5{
 	}
 }
 
-.pron{
-	font-family:osi !important;
-	text-transform:none;
-	letter-spacing:normal;
-	color:$blue;
-	font-size:0.85em;
-}
-
 @media (min-width: 980px){
 	#resp{
 		.clearfix{
@@ -202,7 +198,7 @@ h5{
 	}
 	#mobile{
 		.clearfix{
-			p,img{
+			p,figure{
 				width:45%;
 				float:left;
 			}

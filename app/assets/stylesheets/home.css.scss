@@ -275,10 +275,6 @@
         padding:0 !important;
       }
 
-#work p,#method p{
-	font-size:1em !important;
-}
-
 .p-el{
   			width:48%;
   			float:left;
@@ -312,7 +308,7 @@
 	}
 }
 
-.no-touch .cssanimations{
+.no-touch.cssanimations{
 	#welcome{
 	a{
 		display:none;
