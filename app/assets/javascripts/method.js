@@ -8,8 +8,8 @@ $('.animated').appear(function(){
 	});
 
 
-	$("#try span").click(function(){
-		var w = $(this).find("img").data("width");
+	$("#try img").click(function(){
+		var w = $(this).data("width");
 		var h = $(window).height();
 		window.open (window.location.href,"mywindow","menubar=1,resizable=1,width="+w+",height="+h+"");
 		return false;
