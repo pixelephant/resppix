@@ -4,8 +4,8 @@ class MethodController < ApplicationController
 	caches_page :index
 	
 	def index
-		@meta_desc = "Nézze meg, hogyan készülnek műhelyünkben webes és grafikai alkotásaink."
-		@title = "Mobil fókuszú reszponzív szemléletünkről"
+		@meta_desc = "A Pixelephant weboldalai minden eszközön nagyszerűen működnek, legyen az mobil, táblagép vagy bármi más!"
+		@title = "Responsive web design mobil fókusszal"
 
 		render 'index'
 	end

@@ -10,12 +10,12 @@ PORTFOLIO_ORDER << "xtraveltrix"
 
 PORTFOLIO_ITEMS = {
 										"maform" => {
-											"desc" => "Reszponzív weboldal készítés a Maform számára.",
+											"desc" => "Reszponzív webdesign a Maform számára.",
 											"title" => "Portfólió: Maform",
 											"name" => "Maform"
 										},
 										"flairspring" => {
-											"desc" => "Webáruházfejlesztés, arculattervezés a lakrberendezéssel foglalkozó Flairspring Kft. számára.",
+											"desc" => "Webáruházfejlesztés és arculattervezés a Flairspring számára.",
 											"title" => "Portfólió: Flairspring",
 											"name" => "Flairspring"
 										},
@@ -30,7 +30,7 @@ PORTFOLIO_ITEMS = {
 											"name" => "uTransfer"
 										},
 										"siklosdentalstudio" => {
-											"desc" => "Arculattervezés, honlapkészítés a Siklós Dental Studió számára.",
+											"desc" => "Arculattervezés és honlapkészítés a Siklós Dental Studió számára.",
 											"title" => "Portfólió: Siklós Dental Studió",
 											"name" => "Siklós Dental Studió"
 										},

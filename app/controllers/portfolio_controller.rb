@@ -4,8 +4,8 @@ class PortfolioController < ApplicationController
 	caches_page :index, :show
 
 	def index
-		@meta_desc = "Weboldalkészítési és arculattervezési portfóliónk."
-		@title = "Weboldalkészítési és arculattervezési portfóliónk"
+		@meta_desc = "Válogatott munkáink. Honlap készítés, webáruház és alkalmazás fejlesztés, online marketing és arculattervezés."
+		@title = "Válogatott munkáink"
 
 		render 'index'
 	end

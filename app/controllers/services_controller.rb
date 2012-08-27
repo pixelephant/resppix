@@ -4,8 +4,8 @@ class ServicesController < ApplicationController
 	caches_page :index
 
 	def index
-		@meta_desc = "Ismerje meg, milyen webes és grafikai munkában tudunk segíteni."
-		@title = "Webes és grafikai szolgáltatásaink"
+		@meta_desc = "Letisztult és funkcionális weboldalak, könnyen kezelhető webáruházak és webalkalmazások, online marketing és időtálló arculatok."
+		@title = "Honlap és webáruház, branding, online marketing"
 
 		render 'index'
 	end
