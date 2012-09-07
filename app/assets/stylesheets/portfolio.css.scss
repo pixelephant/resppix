@@ -1,5 +1,9 @@
 @import '_mixins.css.scss';
 
+#blocks ul li{
+  font-family: gi;
+}
+
 hgroup{
   padding-bottom:10px !important;
 }
@@ -97,6 +101,9 @@ hgroup{
 }
 
 .portfolio-el{
+  text-decoration:none;
+  color:$black;
+  
   h3{
     font-family:gi;
     font-weight:normal;
@@ -108,7 +115,7 @@ hgroup{
     text-align:center;
     background: $white;
     border: 1px solid $border-gray;
-    img{
+    .img,img{
       max-width:100%;
     }
   }
