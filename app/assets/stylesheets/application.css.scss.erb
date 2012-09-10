@@ -38,8 +38,6 @@ font-family: 'IcoMoon';
 }
 
 
-
-
 @font-face {
     font-family: 'osb';
     src: url('<%= asset_path('opensans-bold-webfont.eot')%>');
@@ -299,11 +297,24 @@ header{
 	}
 }
 
+.lt-ie9 #main-nav li span{
+	display:none;
+}
+
+.lt-ie9 #main-nav{
+	li:hover,li:focus,li.active{
+		span{
+			display:inline;
+		}
+	}
+}
 
 .no-touch #main-nav li:hover{
 	background:#5E4177;
 	span{
 		opacity:1;
+		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    		filter: alpha(opacity=100);
 	}
 }
 
@@ -413,7 +424,7 @@ header{
 		font-family:Helvetica;
 		font-size:1em;
 		color:$darkgray;
-		padding:3px 1%;
+		padding:7px 1%;
 		height:175px;
 	}
 	label{
@@ -585,7 +596,7 @@ footer{
 			list-stlye:none;
 			width:100%;
 			@include font-nb;
-			letter-spacing:1px;
+			letter-spacing:0px;
 			font-size:0.75em;
 			
 			&.active,&:hover,&:focus,&:active{
@@ -729,15 +740,21 @@ footer{
   	header{
   		padding: 40px 3.125%;
   	}
+
   	#logo{
   		margin-top:10px;
   		@include at2x("home",100px,140px);
   		img{
   			@include t(0.5s);
   			&:hover,&:focus{
-  			opacity:0;
+	  			opacity:0;
+	  			display:none;
+  			}
   		}
-  		}
+  	}
+
+  	.lt-ie9 #logo{
+  		background:url(home.png) no-repeat center center;	
   	}
 
   	#main-nav{
@@ -773,6 +790,10 @@ footer{
   	}
 }
  
+.lt-ie9 #main-nav{
+		margin-top:0 !important;
+	}
+
 @media (min-width:980px){
 	.no-touch #main-nav{
 
@@ -782,6 +803,7 @@ footer{
 			z-index: 1000;
 			//border-bottom:2px solid $border-gray;
 		}
+
 	}
 }
 

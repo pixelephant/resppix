@@ -20,9 +20,9 @@
 
 figure{
 		position:relative;
-	
+		text-align:center;
 	img{
-		
+		text-align:center;
 		&.animated{
 			position:absolute;
 
@@ -130,7 +130,7 @@ figure{
 }
 
 .touch{
-	#try,#tryp{
+	#try,#tryp,#test{
 		display:none;
 	}
 

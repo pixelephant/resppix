@@ -50,7 +50,7 @@ hgroup{
   }
   .control{
     font-size:0.875em;
-    width:100px;
+    width:125px;
     padding-top:25px;
     position:absolute;
     cursor:pointer;
@@ -70,7 +70,7 @@ hgroup{
     &.grid{
       @include at2x(grid,18px,18px);
       left:50%;
-      margin-left:-50px;
+      margin-left:-62.5px;
       background-position:center top;
     }
     &.right{
@@ -83,6 +83,7 @@ hgroup{
 
 #portfolio-image{
   width:100%;
+  text-align:center;
 }
 
 #text{
