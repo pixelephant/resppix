@@ -151,9 +151,9 @@ $(document).ready(function(){
 						zIndex: 3
 					},500, "easeInOutQuad");*/
           $("#thank-you").addClass("opened");
+          $(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
         }
     }});
-		$(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
 
 		return false;
 	});
@@ -173,6 +173,7 @@ $(document).ready(function(){
         if(resp.error == 'none'){
           $(".close").eq(0).trigger("click");
           $("#thank-you").addClass("opened");
+          $(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
           /* HA NINCS TRANSITION
 					$("#thank-you").animate({
 						marginTop: 0,
@@ -180,7 +181,7 @@ $(document).ready(function(){
 					},500, "easeInOutQuad");*/
         }
     }});
-		$(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
+		
 		return false;
 	});
 
