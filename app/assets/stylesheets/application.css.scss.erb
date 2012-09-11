@@ -360,7 +360,7 @@ header{
 			float:left;
 			text-align:center;
 			@include font-nb;
-			font-size:1em;
+			font-size:0.8em;
 			text-decoration:none;
 			@include t-04;
 			span{
@@ -672,6 +672,7 @@ footer{
   	#contact-options p a{
   		@include vh;
   	}
+
   }
  
   /* Portrait tablet to landscape and desktop */
@@ -692,7 +693,9 @@ footer{
 
    /* NOT mobile */
   @media (min-width: 768px) and (max-width: 1399px), (min-width: 1200px){
-
+  	#contact-options-inner a{
+  		font-size:1em;
+  	}
   	#contact{
   		margin-top:-535px;
   	}
