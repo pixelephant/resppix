@@ -131,6 +131,7 @@ $(document).ready(function(){
 	});
 
 	$("#quote-form").submit(function(){
+		$(this).find("input[type='submit']").val("Küldés ...").attr("disabled","disabled");
 		$.ajax({
       type: 'POST',
       url: "/ajax/inquery",
@@ -152,10 +153,13 @@ $(document).ready(function(){
           $("#thank-you").addClass("opened");
         }
     }});
+		$(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
+
 		return false;
 	});
 
 	$("#contact-form").submit(function(){
+		$(this).find("input[type='submit']").val("Küldés ...").attr("disabled","disabled");
 		$.ajax({
       type: 'POST',
       url: "/ajax/contact",
@@ -176,6 +180,7 @@ $(document).ready(function(){
 					},500, "easeInOutQuad");*/
         }
     }});
+		$(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
 		return false;
 	});
 
