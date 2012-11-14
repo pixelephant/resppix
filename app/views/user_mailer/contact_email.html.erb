@@ -12,6 +12,8 @@
       Üzenet: <%= @brief %> <br/>
       <br>
       Env: <%= @env %>
+      <br>
+      Referer: <%= @additional.env['HTTP_REFERER'] %>
     </p>
   </body>
 </html>
