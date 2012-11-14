@@ -1,6 +1,6 @@
 #encoding: utf-8
 class UserMailer < ActionMailer::Base
-  default :from => "balazs.antal@pixelephant.hu"
+  default :from => "pixelephant@pixelephant.hu"
 
   def contact_email(name,phone,email,brief,env)
   	@name = name
@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
   	@email = email
   	@brief = brief
     @env = env
-    mail(:to => "balazs.antal@pixelephant.hu", :subject => "Kontakt")
+    mail(:to => "pixelephant@pixelephant.hu", :subject => "Kontakt")
   end
 
   def inquery_email(name,phone,email,brief,budget,env)
@@ -18,7 +18,7 @@ class UserMailer < ActionMailer::Base
   	@brief = brief
   	@budget = budget
     @env = env
-    mail(:to => "balazs.antal@pixelephant.hu", :subject => "Árajánlat")
+    mail(:to => "pixelephant@pixelephant.hu", :subject => "Árajánlat")
   end
 
 end
