@@ -131,6 +131,7 @@ $(document).ready(function(){
 	});
 
 	$("#quote-form").submit(function(){
+		$(this).find("input[type='submit']").val("Küldés ...").attr("disabled","disabled");
 		$.ajax({
       type: 'POST',
       url: "/ajax/inquery",
@@ -150,12 +151,15 @@ $(document).ready(function(){
 						zIndex: 3
 					},500, "easeInOutQuad");*/
           $("#thank-you").addClass("opened");
+          $(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
         }
     }});
+
 		return false;
 	});
 
 	$("#contact-form").submit(function(){
+		$(this).find("input[type='submit']").val("Küldés ...").attr("disabled","disabled");
 		$.ajax({
       type: 'POST',
       url: "/ajax/contact",
@@ -169,6 +173,7 @@ $(document).ready(function(){
         if(resp.error == 'none'){
           $(".close").eq(0).trigger("click");
           $("#thank-you").addClass("opened");
+          $(this).find("input[type='submit']").val("Küldés").removeAttr("disabled");
           /* HA NINCS TRANSITION
 					$("#thank-you").animate({
 						marginTop: 0,
@@ -176,6 +181,7 @@ $(document).ready(function(){
 					},500, "easeInOutQuad");*/
         }
     }});
+		
 		return false;
 	});
 
