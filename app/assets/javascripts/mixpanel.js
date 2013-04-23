@@ -8,7 +8,7 @@ $(document).ready(function(){
 	    return true;
 	});
 
-	// $("footer nav a").click(function(){
+	$("footer nav a").click(function(){
 	    mixpanel.track("Footer nav", {"location": document.URL, "target": $(this).attr('href')});
 	    return true;
 	});
