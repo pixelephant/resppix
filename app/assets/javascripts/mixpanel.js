@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	$("nav#main-nav a").click(function(){
 	    mixpanel.track("Main nav", {"location": document.URL, "target": $(this).attr('href')});
-	    console.log('target: ' + $(this).attr('href');
+	    console.log('target: ' + $(this).attr('href'));
 	    return true;
 	});
 
