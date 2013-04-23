@@ -233,6 +233,6 @@ mixpanel.init("44b74623a7e29013a0dde26b0af51ef2");</script><!-- end Mixpanel -->
  <script>window.jQuery || document.write('<script src="/assets/jquery-1.8.0.min.js"><\/script>')</script>
 <!--[if lt IE 9]>  <script src="/assets/ie.js"></script> <![endif]-->
 <%= javascript_include_tag "picturefill" %>
-<%= javascript_include_tag "application", controller_name %>
+<%= javascript_include_tag "application", controller_name, "jquery.cookie", "mixpanel" %>
 </body>
 </html>
