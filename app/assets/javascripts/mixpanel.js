@@ -4,7 +4,6 @@ $(document).ready(function(){
 
 	$("nav#main-nav a").click(function(){
 	    mixpanel.track("Main nav", {"location": document.URL, "target": $(this).attr('href')});
-	    console.log('target: ' + $(this).attr('href'));
 	    return true;
 	});
 
@@ -19,7 +18,7 @@ $(document).ready(function(){
 	});
 
 	$("section#test form").submit(function(){
-		mixpanel.track("Test your site", {"url": $("input#test").val()});
+		mixpanel.track("Test your site", {"url": $("input#test").val()});		
 		return true;
 	});
 
@@ -44,7 +43,14 @@ $(document).ready(function(){
 	});	
 
 	$(window).scroll(function(){
-		mixpanel.track("Window scroll", {"location": document.URL});
+		if($.cookie('pix_mixpanel_scroll_sm') === undefined && $(document).scrollTop() > 720 && ($(document).height() - $(window).height() - 730 - 100 > $(document).scrollTop())){
+			mixpanel.track("Window scroll small", {"location": document.URL});
+			$.cookie('pix_mixpanel_scroll_sm', 'true', { path: document.location.pathname });
+		}
+		if($.cookie('pix_mixpanel_scroll_lg') === undefined && ($(document).height() - $(window).height() - 730 - 100 < $(document).scrollTop())){
+			mixpanel.track("Window scroll large", {"location": document.URL});
+			$.cookie('pix_mixpanel_scroll_lg', 'true', { path: document.location.pathname });
+		}
 	    return true;
 	});
 
