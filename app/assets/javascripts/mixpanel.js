@@ -42,6 +42,16 @@ $(document).ready(function(){
 	    return true;
 	});	
 
+	$("#contact #form-wrap form").submit(function(){
+		var id = ($(this).attr('id'));
+		if(id == 'contact-form'){
+			var email = $("#contact-email").val();
+		}else{
+			var email = $("#quote-email").val();
+		}
+		mixpanel.alias(email);
+	});
+
 	$(window).scroll(function(){
 		if($.cookie('pix_mixpanel_scroll_sm') === undefined && $(document).scrollTop() > 720 && ($(document).height() - $(window).height() - 730 - 100 > $(document).scrollTop())){
 			mixpanel.track("Window scroll small", {"location": document.URL});
